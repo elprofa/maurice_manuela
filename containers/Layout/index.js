@@ -1,8 +1,7 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
 import Head from "next/head";
-
-// import Navbar from "../../components/shared/navbar";
+import Header from '../../components/shared/Header'
 import { theme } from "../../theme";
 import { GlobalCSS } from "../../public/styles/style";
 // import Footer from "../../components/footer";
@@ -17,7 +16,7 @@ const Layout = ({ children, ...props }) => {
         <link rel="stylesheet" href="https://use.typekit.net/pgv8psy.css" />
       </Head>
       <GlobalCSS />
-      {/* <Navbar />  */}
+      <Header /> 
       {children}
       {/* <Footer /> */}
     </ThemeProvider>
