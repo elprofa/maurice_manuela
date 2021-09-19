@@ -1,7 +1,4 @@
 export const theme = {
-  heights: {
-    TopPageSection: "350px",
-  },
   colors: {
     primary: "#868686",
     secondary: "#1392c0",
@@ -11,12 +8,8 @@ export const theme = {
     transparent: "transparent",
     white: "#fff",
     black: "#000",
-    blackG: "rgb(90 93 99)",
     alto: "#ddd",
-    KingBleu: "#0d77b6",
-    kingGreen: "#ecf6fb",
   },
-
   soicalColors: {
     facebook: "#3B5998",
     twitter: "#00ACEE",
@@ -68,25 +61,53 @@ export const theme = {
     snapchat: "#FFFC00",
   },
   font: {
-    bodyFont: "'source-sans-pro',sans-serif",
-    headingFont: "'source-sans-pro',sans-serif",
+    bodyFont: "'Poppins', sans-serif",
+    headingFont: "'Poppins', sans-serif",
     bodyFontSize: "14px",
     headingFontSizes: {
-      h1: "60px",
-      h2: "48px",
-      h3: "35px",
+      h1: "42px",
+      h2: "30px",
+      h3: "26px",
       h4: "22px",
       h5: "18px",
       h6: "14px",
     },
-    p: "16px",
-  },
-  Poid: {
-    paragraphe: "100",
   },
   lineHeights: {
     text: "26px",
     heading: "1.3",
   },
   baseTransition: "all 0.4s ease-in-out 0s",
+};
+
+const size = {
+  xlarge: "1599px",
+  large: "1199px",
+  medium: "991px",
+  small: "767px",
+  xsmall: "575px",
+  xxsmall: "480px",
+  xxlargeOnly: "1700px",
+  xlargeOnly: "1600px",
+  largeOnly: "1200px",
+  mediumOnly: "992px",
+  smallOnly: "768px",
+  xsmallOnly: "576px",
+  xxsmallOnly: "481px",
+};
+
+export const device = {
+  xlarge: `(max-width: ${size.xlarge})`,
+  large: `(max-width: ${size.large})`,
+  medium: `(max-width: ${size.medium})`,
+  small: `(max-width: ${size.small})`,
+  xsmall: `(max-width: ${size.xsmall})`,
+  xxsmall: `(max-width: ${size.xxsmall})`,
+  xxlargeOnly: `(min-width: ${size.xxlargeOnly})`,
+  xlargeOnly: `(min-width: ${size.xlargeOnly})`,
+  largeOnly: `(min-width: ${size.largeOnly})`,
+  mediumOnly: `(min-width: ${size.mediumOnly})`,
+  smallOnly: `(min-width: ${size.smallOnly})`,
+  xsmallOnly: `(min-width: ${size.xsmallOnly})`,
+  xxsmallOnly: `(min-width: ${size.xxsmallOnly})`,
 };

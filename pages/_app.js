@@ -1,24 +1,44 @@
-import React from "react";
-import App from "next/app";
-import Head from "next/head";
-import SiteLayout from "../components/shared/Layout";
+import { ApolloProvider } from "@apollo/client";
+import { useApollo } from "../apollo/client";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { ThemeProvider } from "styled-components";
-import { theme } from "../theme/theme";
-import GlobalStyle from "../styles/globalstyles";
+import Layout from "../containers/Layout";
+import withData from "../lib/withData";
 
-class MyApp extends App {
-  render() {
-    const { Component, pageProps } = this.props;
-    return (
-      <ThemeProvider theme={theme}>
-        <GlobalStyle />
-        <SiteLayout>
-          <Component {...pageProps}></Component>
-        </SiteLayout>
-      </ThemeProvider>
-    );
-  }
+import NProgress from 'nprogress';
+import Router from "next/router";
+//la barre de chargement
+Router.events.on('routeChangeStart',()=>NProgress.start());
+Router.events.on('routeChangeComplete',()=>NProgress.done());
+Router.events.on('routeChangeError',()=>NProgress.done());
+
+
+
+//TODO:Swap with our own
+import 'nprogress/nprogress.css';
+import '../public/styles/nprogress.css';
+
+ function App({ Component, pageProps,apollo}) {
+  // const apolloClient = useApollo(pageProps.initialApolloState);
+  //console.log(apollo);
+  return (
+    <ApolloProvider client={apollo}>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </ApolloProvider>
+  );
 }
 
-export default MyApp;
+App.getInitialProps=async function ({Component,ctx}){
+ 
+  let pageProps={};
+  if(Component.getInitialProps){
+    pageProps=await Component.getInitialProps(ctx);
+  }
+
+  pageProps.query=ctx.query;
+
+  return {pageProps};
+
+}
+export default withData(App);

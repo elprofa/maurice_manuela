@@ -1,16 +1,14 @@
-import Head from "next/head";
-import Hero from "../components/Hero";
-import SectionCarousselDeuxColonne from "../components/SectionCarousselDeuxColonne";
-import FormEtuOne from "../components/shared/FormEtudeStepOne";
+import { initializeApollo } from "../apollo/client";
 
-export default function Home() {
+import { Container, Button, Row, Col } from "reactstrap";
+
+const Index = (props) => {
   return (
     <div>
-      <main>
-        <Hero />
-        <SectionCarousselDeuxColonne />
-        <FormEtuOne />
-      </main>
+     wedo
     </div>
   );
-}
+};
+
+
+export default Index;
