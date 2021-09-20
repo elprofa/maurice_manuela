@@ -7,6 +7,11 @@ const TitleStc=Styled.div`
         font-weight:900;
 
     }
+    h2
+    {
+        font-size: 30px;
+        font-weight: 600;
+    }
     h5
     {
         font-weight:900;

@@ -11,7 +11,7 @@ import Bouton from '../../shared/Bouton';
 function PageAccueilSectionService(props) {
     return (
         <PageAccueilSectionServiceStc className={props.className}>
-            <Container>
+            <Container className="px-0">
                 <Row>
                     <Col lg={5}></Col>
                     <Col lg={7}>
@@ -27,7 +27,7 @@ function PageAccueilSectionService(props) {
                     </Col>
                 </Row>
                 <Row className="my-2 my-md-5">
-                    <Col lg={4} className="px-0 px-md-4">
+                    <Col lg={4} className="px-2 px-md-4 pt-4 pt-md-0">
                         <CardService 
                             icon={<AiOutlineFileSearch/>} 
                             title={ <Title niveau={5}>
@@ -46,7 +46,7 @@ function PageAccueilSectionService(props) {
                         }
                         />
                     </Col>
-                    <Col lg={4} className="px-0 px-md-4">
+                    <Col lg={4} className="px-2 px-md-4 py-4 py-md-0">
                         <CardService className="mt-0 mt-md-5"
                             icon={<AiOutlineFileSearch/>} 
                             title={ <Title niveau={5}>
@@ -65,7 +65,7 @@ function PageAccueilSectionService(props) {
                         }
                         />
                     </Col>
-                    <Col lg={4} className="mt-0 mt-md-5 px-0 px-md-4">
+                    <Col lg={4} className="mt-0 mt-md-5 px-2 px-md-4">
                         <CardService className="mt-0 mt-md-5"
                             icon={<AiOutlineFileSearch/>} 
                             title={ <Title niveau={5}>

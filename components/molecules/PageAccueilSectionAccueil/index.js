@@ -11,7 +11,7 @@ function PageAccueilSectionAccueil() {
             <Row>
                 <Col lg={6} className="align-self-center  px-2 px-md-5 py-2 py-md-5">
                     <h1 className="background-overlay">Dubani agency</h1>
-                   <div className="px-0 px-md-5" style={{position:"relative",zIndex:1}}>
+                   <div className="px-2 px-md-5" style={{position:"relative",zIndex:1}}>
                         <Title className="py-2 py-md-3">
                             Dubani Agency 
                         </Title>
@@ -26,7 +26,7 @@ function PageAccueilSectionAccueil() {
                         </Bouton>
                    </div>
                 </Col>
-                <Col lg={6} className="right">
+                <Col lg={6} className="right d-none d-lg-block">
                     <img src="/img/PageAccueilSectionAccueil/image-1.jpg" width="100%"/>
                 </Col>
             </Row>

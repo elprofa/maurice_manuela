@@ -23,7 +23,7 @@ function PageAccueilSectionClient() {
                         Clients
                     </Title>
                     <Title niveau={1}>
-                        Ils nous ont fait confiance et n'ont pas été decus !
+                        Ils nous ont fait confiance et n'ont pas été déçus !
                     </Title>
                     <Texte className="h5 py-2 py-md-3">
                         Chez Dubani nous travaillons avec nos clients,pour nos clients. 
@@ -33,7 +33,7 @@ function PageAccueilSectionClient() {
                </Col>
             </Row>
             <Row className="my-2 my-md-5">
-                    <Col lg={4} className="px-0 px-md-4">
+                    <Col lg={4} className="px-md-4 py-2 py-md-0">
                         <CardClient 
                             image="/img/PageAccueilSectionClient/image-1.jpg" 
                             title={ <Title niveau={5}>
@@ -54,7 +54,7 @@ function PageAccueilSectionClient() {
                         }
                         />
                     </Col>
-                    <Col lg={4} className="px-0 px-md-4">
+                    <Col lg={4} className="px-md-4 py-2 py-md-0">
                         <CardClient className="mt-0 mt-md-5"
                             image="/img/PageAccueilSectionClient/image-2.jpg" 
                             title={ <Title niveau={5}>
@@ -75,7 +75,7 @@ function PageAccueilSectionClient() {
                         }
                         />
                     </Col>
-                    <Col lg={4} className="mt-0 mt-md-5 px-0 px-md-4">
+                    <Col lg={4} className="mt-0 mt-md-5 px-md-4 py-2 py-md-0">
                         <CardClient className="mt-0 mt-md-5"
                             image="/img/PageAccueilSectionClient/image-3.jpg" 
                             title={ <Title niveau={5}>

@@ -33,6 +33,8 @@ const CardProjetStc=Styled.div`
         z-index: 0;
         font-size: 30px;
         color: #64c5ea;
+        transform: rotateZ(45deg);
+        opacity:0.1;
     }
 
     .indice

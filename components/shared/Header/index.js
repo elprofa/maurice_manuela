@@ -16,6 +16,8 @@ import {
 
 import HeaderStc from './Header.stc'
 
+import {AiOutlineMenu} from 'react-icons/ai'
+
 const Header = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -27,7 +29,11 @@ const Header = (props) => {
         <NavbarBrand href="/">
           <img src="/img/logo.svg" height="40"/>
         </NavbarBrand>
-        <NavbarToggler onClick={toggle} />
+        <NavbarToggler onClick={toggle}>
+          <span className="toggle">
+              <AiOutlineMenu />
+          </span>
+        </NavbarToggler>
         <Collapse isOpen={isOpen} navbar className="block-menu">
           <Nav className="mr-0" navbar>
             <NavItem>

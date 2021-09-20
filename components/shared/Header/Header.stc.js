@@ -11,8 +11,16 @@ const HeaderStc=Styled.div`
     }
 
     .navbar-expand-md .navbar-nav .nav-link {
+        @media (min-width: 991px) {
+            color: #fff;
+        }
         
-        color: #fff;
+        color:#333;
+    }
+
+    .toggle
+    {
+        font-size:30px;
     }
 `;
 

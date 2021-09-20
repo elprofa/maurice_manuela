@@ -1,0 +1,134 @@
+import React from 'react'
+import FooterStc from './Footer.stc'
+import {
+    Container,
+    Row,
+    Col
+}
+from 'reactstrap';
+import Title from '../../shared/Title';
+import {AiFillPhone} from 'react-icons/ai';
+import Texte from '../../shared/Texte';
+
+function Footer() {
+    return (
+        <FooterStc>
+            <Container className="py-2 py-md-5">
+                <div className="divLogo text-center py-3 py-md-5" style={{margin:"auto",display:"block"}}>
+                    <img src="/img/logo.svg"  height="80" />
+                </div>
+                <Row>
+                    <Col lg={4}>
+                        <Row>
+                            <Col sm={3}>
+                                <span className="icon">
+                                    <AiFillPhone />
+                                </span>
+                            </Col>
+                            <Col sm={8} className="align-self-center">
+                                <Title niveau={2}>
+                                    <span>
+                                        Numero tel
+                                    </span>
+                                    <span className="value">
+                                        +241 077 48 43 26
+                                    </span>
+                                </Title>
+                            </Col>
+                        </Row>
+                    </Col>
+                    <Col lg={4}>
+                        <Row>
+                            <Col sm={3}>
+                                <span className="icon">
+                                    <AiFillPhone />
+                                </span>
+                            </Col>
+                            <Col sm={8} className="align-self-center">
+                                <Title niveau={2}>
+                                    <span>
+                                        Numero tel
+                                    </span>
+                                    <span className="value">
+                                        +241 077 48 43 26
+                                    </span>
+                                </Title>
+                            </Col>
+                        </Row>
+                    </Col>
+                    <Col lg={4}>
+                        <Row>
+                            <Col sm={3}>
+                                <span className="icon">
+                                    <AiFillPhone />
+                                </span>
+                            </Col>
+                            <Col sm={8} className="align-self-center">
+                                <Title niveau={2}>
+                                    <span>
+                                        Numero tel
+                                    </span>
+                                    <span className="value">
+                                        +241 077 48 43 26
+                                    </span>
+                                </Title>
+                            </Col>
+                        </Row>
+                    </Col>
+                </Row>
+                <div className="trait py-2 py-md-4"></div>
+                <Row className="py-md-5 py-2">
+                    <Col lg={6} className="px-md-5pl-md-0">
+                        <Title niveau={2}>
+                            DUBANI AGENCY
+                        </Title>
+                        <Texte className="">
+                            Nous sommes une agence digitale basée à CASABLANCA (Maroc) spécialisée dans la création
+                            de contenus digitaux pour les entreprises, les institutions.
+                            C’est une agence de communication capable de créer des sites internet et de proposer 
+                            toutes les prestations liées au webmarketing.
+                        </Texte>
+                    </Col>
+                    <Col md={2}>
+                        <Title niveau={3}>
+                            Nos services
+                        </Title>
+                        <ul>
+                            <li>
+                               <a>Marketing digital</a>
+                               <a>Web & Mobile Dev</a>
+                               <a>Referencement</a>
+                            </li> 
+                        </ul>
+                    </Col>
+                    
+                    <Col md={2}>
+                        <Title niveau={3}>
+                            Support 
+                        </Title>
+                        <ul>
+                            <li>
+                               <a>A propos de nous</a>
+                               <a>Nos Projets</a>
+                               <a>Contacts</a>
+                            </li> 
+                        </ul>
+                    </Col>
+                    <Col md={2}>
+                        <Title niveau={3}>
+                           Reseaux sociaux
+                        </Title>
+                        <ul>
+                            <li>
+                               <a>Dubani Agency</a>
+                               <a>dubaniagency</a>
+                            </li> 
+                        </ul>
+                    </Col>
+                </Row>
+            </Container>
+        </FooterStc>
+    )
+}
+
+export default Footer

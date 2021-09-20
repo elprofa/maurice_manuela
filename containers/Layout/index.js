@@ -4,7 +4,7 @@ import Head from "next/head";
 import Header from '../../components/shared/Header'
 import { theme } from "../../theme";
 import { GlobalCSS } from "../../public/styles/style";
-// import Footer from "../../components/footer";
+import Footer from "../../components/molecules/Footer";
 import { Form, Container, Row, Col } from "reactstrap";
 
 const Layout = ({ children, ...props }) => {
@@ -18,7 +18,7 @@ const Layout = ({ children, ...props }) => {
       <GlobalCSS />
       <Header /> 
       {children}
-      {/* <Footer /> */}
+      <Footer />
     </ThemeProvider>
   );
 };

@@ -1,7 +1,11 @@
 import Styled from 'styled-components'
 
 const PageAccueilSectionAccueilStc=Styled.section`
-    height:100vh;
+
+    @media (min-width: 991px) {
+        height:100vh;
+    }
+    
     @media (min-width: 991px) {
         margin-top:-80px;
         overflow:hidden;

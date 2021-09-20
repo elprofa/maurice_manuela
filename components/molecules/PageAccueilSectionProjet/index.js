@@ -8,7 +8,7 @@ import CardProjet from '../CardProjet';
 function PageAccueilSectionProjet() {
     return (
         <PageAccueilSectionProjetStc>
-            <Container>
+            <Container className="px-0">
                 <Row>
                     <Col lg={8}>
                         <Title className="py-2 py-md-3">
@@ -25,13 +25,13 @@ function PageAccueilSectionProjet() {
                     <Col lg={4}></Col>
                 </Row>
             </Container>
-            <div className="my-2 my-md-3 divChiffreStat" >
+            <div className="my-2 my-md-3 divChiffreStat d-none d-lg-block" >
                 <img src="/img/PageAccueilSectionProjet/image-1.jpg" width="100%"/>
             </div>
-            <Container className="containerChiffre" style={{maxWidth:"1390px !important;"}}>
+            <Container className="containerChiffre px-0" style={{maxWidth:"1390px !important;"}}>
                 <Row>
                     <Col lg={2}>
-                        <CardProjet niveau={1}  className="text-center py-md-2 pt-md-4"
+                        <CardProjet niveau={1}  className="text-center my-2 my-md-0 py-2 py-md-2 pt-md-4"
                         title={
                             <Title niveau={1}>5</Title>
                         }
@@ -43,7 +43,7 @@ function PageAccueilSectionProjet() {
                         />
                     </Col>
                     <Col lg={5}>
-                        <CardProjet niveau={3} className="text-center py-md-2 pt-md-4"
+                        <CardProjet niveau={3} className="text-center my-2 my-md-0 py-2 py-md-2 pt-md-4"
                         title={
                             <Title niveau={1}>100</Title>
                         }
@@ -55,7 +55,7 @@ function PageAccueilSectionProjet() {
                         />
                     </Col>
                     <Col lg={3}>
-                        <CardProjet niveau={2} className="text-center py-md-2 pt-md-4"
+                        <CardProjet niveau={2} className="text-center my-2 my-md-0 py-2 py-md-2 pt-md-4"
                         title={
                             <Title niveau={1}>30</Title>
                         }
@@ -67,7 +67,7 @@ function PageAccueilSectionProjet() {
                         />
                     </Col>
                     <Col lg={2}>
-                        <CardProjet niveau={1} className="text-center py-md-2 pt-md-4"
+                        <CardProjet niveau={1} className="text-center my-2 my-md-0 py-2 py-md-2 pt-md-4"
                         title={
                             <Title niveau={1}>3</Title>
                         }
