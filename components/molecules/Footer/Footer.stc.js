@@ -17,7 +17,7 @@ background: #23232e;
 }
 .trait
 {
-    border-bottom:8px solid blue;
+    border-bottom:2px solid blue;
 }
 li a
 {

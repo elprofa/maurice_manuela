@@ -25,7 +25,7 @@ function Title(props) {
     else if(props.niveau==3)
     {
         return (
-            <TitleStc>
+            <TitleStc className={props.className}>
                 <h3>
                     {props.children} 
                 </h3>
@@ -45,7 +45,7 @@ function Title(props) {
     else if(props.niveau==5)
     {
         return (
-            <TitleStc>
+            <TitleStc className={props.className}>
                 <h5>
                     {props.children} 
                 </h5>

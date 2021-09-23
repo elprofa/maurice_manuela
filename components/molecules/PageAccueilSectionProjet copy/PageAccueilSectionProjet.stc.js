@@ -40,12 +40,5 @@ const PageAccueilSectionProjetStc=Styled.section`
             color:#0e2177;
         }
     }
-
-    .block-container-chiffre
-    {
-        @media (min-width: 991px) {
-           margin-top:-100px;
-        }
-    }
 `;
 export default PageAccueilSectionProjetStc;

@@ -50,12 +50,12 @@ function PageAccueilSectionService(props) {
                         <CardService className="mt-0 mt-md-5"
                             icon={<AiOutlineFileSearch/>} 
                             title={ <Title niveau={5}>
-                            Marketing digital
+                            WEB & MOBILE DEVELOPMENT
                             </Title> }
                             texte={
                                 <p>
-                                    Nous mettons en place votre Stratégie marketing 
-                                    en vous Assurant ainsi une meilleure Rentabilité dans vos actions
+                                    Dubani concoit des sites internet Et des applications sur mesure De A à Z, en prenant
+                                    en compte Vos exigences personnelles
                                 </p>
                             }
                         bouton={
@@ -69,12 +69,12 @@ function PageAccueilSectionService(props) {
                         <CardService className="mt-0 mt-md-5"
                             icon={<AiOutlineFileSearch/>} 
                             title={ <Title niveau={5}>
-                            Marketing digital
+                            Referencement
                             </Title> }
                             texte={
                                 <p>
-                                    Nous mettons en place votre Stratégie marketing 
-                                    en vous Assurant ainsi une meilleure Rentabilité dans vos actions
+                                    Notre principale mission consiste à ameliorer le positionnement de votre site web
+                                    sur les moteurs et annuaires.
                                 </p>
                             }
                         bouton={

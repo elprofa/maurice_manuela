@@ -5,6 +5,15 @@ const HeaderStc=Styled.div`
         justify-content: end;
     }
 
+    .block-menu ul li
+    {
+        @media (min-width: 991px) {
+            margin:auto 10px;
+        }
+
+        font-weight:bold;
+    }
+
     nav.navbar
     {
         border:0px;

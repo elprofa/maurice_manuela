@@ -4,10 +4,26 @@ import {Container,Row,Col} from 'reactstrap';
 import Title from '../../shared/Title';
 import Texte from '../../shared/Texte';
 import CardProjet from '../CardProjet';
+import Bouton from '../../shared/Bouton';
+import {BsArrowRight} from 'react-icons/bs'
+import { useState } from 'react';
+import Chiffre from '../../shared/Chiffre';
 
-function PageAccueilSectionProjet() {
+function PageAccueilSectionProjet(props) {
+
+    const [actif,setActif]=useState(1);
+
+    const displyContent=(valeur)=>{
+        console.log(valeur);
+        setActif(valeur);
+    }
+
+    const wedo=()=>{
+        return actif;
+    }
+
     return (
-        <PageAccueilSectionProjetStc>
+        <PageAccueilSectionProjetStc className={props.className}>
             <Container className="px-0">
                 <Row>
                     <Col lg={8}>
@@ -15,71 +31,31 @@ function PageAccueilSectionProjet() {
                             Projets
                         </Title>
                         <Title niveau={1}>
-                            Augmentez le chiffre d'affaire De votre Société en ameliorant Votre présence sur le web !
+                            Augmenter le chiffre d'affaires de votre société en ameliorant votre presence sur le web!
                         </Title>
                         <Texte className="h5 py-2 py-md-3">
-                            Dubani est une agence agence de conseil digital. Son role c'est D'assurer la réalisation 
-                            de tous vos projets de développement d'applications Web et mobile.
+                            Dubani  est une agence de conseil digital. Son rôle c'est 
+                            D'assurer la réalisation de tous vos projets de developpement d'applications Web et mobile.
                         </Texte>
                     </Col>
                     <Col lg={4}></Col>
                 </Row>
             </Container>
-            <div className="my-2 my-md-3 divChiffreStat d-none d-lg-block" >
-                <img src="/img/PageAccueilSectionProjet/image-1.jpg" width="100%"/>
-            </div>
-            <Container className="containerChiffre px-0" style={{maxWidth:"1390px !important;"}}>
-                <Row>
-                    <Col lg={2}>
-                        <CardProjet niveau={1}  className="text-center my-2 my-md-0 py-2 py-md-2 pt-md-4"
-                        title={
-                            <Title niveau={1}>5</Title>
-                        }
-                        texte={
-                            <Texte>
-                                Experience
-                            </Texte>
-                        }
-                        />
-                    </Col>
-                    <Col lg={5}>
-                        <CardProjet niveau={3} className="text-center my-2 my-md-0 py-2 py-md-2 pt-md-4"
-                        title={
-                            <Title niveau={1}>100</Title>
-                        }
-                        texte={
-                            <Texte>
-                                Experience
-                            </Texte>
-                        }
-                        />
-                    </Col>
-                    <Col lg={3}>
-                        <CardProjet niveau={2} className="text-center my-2 my-md-0 py-2 py-md-2 pt-md-4"
-                        title={
-                            <Title niveau={1}>30</Title>
-                        }
-                        texte={
-                            <Texte>
-                                Experience
-                            </Texte>
-                        }
-                        />
-                    </Col>
-                    <Col lg={2}>
-                        <CardProjet niveau={1} className="text-center my-2 my-md-0 py-2 py-md-2 pt-md-4"
-                        title={
-                            <Title niveau={1}>3</Title>
-                        }
-                        texte={
-                            <Texte>
-                                Experience
-                            </Texte>
-                        }
-                        />
-                    </Col>
-                </Row>
-            </Container>
+            <img src="/img/sectionprojet.png" width="100%" />
+           <Row className="px-2 px-md-4 block-container-chiffre">
+               <Col lg={3}>
+                    <CardProjet texte="Experience" indice="Ans" chiffre={<Chiffre texte="5" />} />
+               </Col>
+               <Col lg={3}>
+                    <CardProjet texte="Projets realisés" indice="Projets" chiffre={<Chiffre texte="100" />} />
+               </Col>
+               <Col lg={3}>
+                    <CardProjet texte="Clients actifs" indice="Clients" chiffre={<Chiffre texte="30" />} />
+               </Col>
+               <Col lg={3}>
+                    <CardProjet texte="Pays couverts" indice="Pays" chiffre={<Chiffre texte="3" />} />
+               </Col>
+           </Row>
         </PageAccueilSectionProjetStc>
     )
 }

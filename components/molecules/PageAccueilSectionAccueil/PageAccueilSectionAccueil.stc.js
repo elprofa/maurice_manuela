@@ -14,17 +14,10 @@ const PageAccueilSectionAccueilStc=Styled.section`
     
     .row
     {
-        margin:0px !important
+        margin-left:0px !important;
+        margin-right:0px !important
     }
 
-    .right
-     {
-        @media (min-width: 991px) {
-            height:100vh;
-            overflow:hidden;
-        }
-         
-     }
      .background-overlay
      {
          display:none;
@@ -43,6 +36,13 @@ const PageAccueilSectionAccueilStc=Styled.section`
             top: -64px;
         }
         
+     }
+
+     .right
+     {
+         background:url(/img/img2.png);
+         background-size:cover;
+         height:100vh;
      }
 `;
 export default PageAccueilSectionAccueilStc;

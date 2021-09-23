@@ -25,12 +25,12 @@ function Footer() {
                                     <AiFillPhone />
                                 </span>
                             </Col>
-                            <Col sm={8} className="align-self-center">
+                            <Col sm={8} className="my-4 align-self-center">
                                 <Title niveau={2}>
-                                    <span>
+                                    <span className="mt-2" style={{fontSize:"16px",lineHeight:"1.5em"}}>
                                         Numero tel
                                     </span>
-                                    <span className="value">
+                                    <span className="value py-2" >
                                         +241 077 48 43 26
                                     </span>
                                 </Title>
@@ -46,10 +46,10 @@ function Footer() {
                             </Col>
                             <Col sm={8} className="align-self-center">
                                 <Title niveau={2}>
-                                    <span>
+                                    <span className="mt-2" style={{fontSize:"16px",lineHeight:"1.5em"}}>
                                         Numero tel
                                     </span>
-                                    <span className="value">
+                                    <span className="value py-2">
                                         +241 077 48 43 26
                                     </span>
                                 </Title>
@@ -65,10 +65,10 @@ function Footer() {
                             </Col>
                             <Col sm={8} className="align-self-center">
                                 <Title niveau={2}>
-                                    <span>
+                                    <span className="mt-2" style={{fontSize:"16px",lineHeight:"1.5em"}}>
                                         Numero tel
                                     </span>
-                                    <span className="value">
+                                    <span className="value py-2">
                                         +241 077 48 43 26
                                     </span>
                                 </Title>

@@ -20,7 +20,7 @@ function PageAccueilSectionClient() {
                 </Col>
                <Col lg={6}>
                     <Title className="py-2 py-md-3">
-                        Clients
+                        Nos Clients
                     </Title>
                     <Title niveau={1}>
                         Ils nous ont fait confiance et n'ont pas été déçus !

@@ -1,6 +1,7 @@
 import Styled from 'styled-components'
 
 const CardProjetStc=Styled.div`
+    text-align:center;
     h1
     {
         font-size:90px !important;
@@ -41,6 +42,15 @@ const CardProjetStc=Styled.div`
     {
         line-height: 2em;
         margin-top: -20px !important;
+    }
+
+    .divTag .div1
+    {
+        display:inline-block;
+    }
+    .div2 span
+    {
+        display:block;
     }
     
 `;

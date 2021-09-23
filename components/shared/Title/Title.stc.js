@@ -5,7 +5,6 @@ const TitleStc=Styled.div`
     {
         font-size:48px;
         font-weight:900;
-
     }
     h2
     {
@@ -22,6 +21,7 @@ const TitleStc=Styled.div`
         width: 30px;
         display: inline-block;
         margin-right:10px;
+        vertical-align: middle;
     }
 `;
 export default TitleStc;

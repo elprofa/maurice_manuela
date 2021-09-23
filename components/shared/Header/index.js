@@ -25,7 +25,7 @@ const Header = (props) => {
 
   return (
     <HeaderStc>
-      <Navbar expand="md" className="container">
+      <Navbar expand="md" className="">
         <NavbarBrand href="/">
           <img src="/img/logo.svg" height="40"/>
         </NavbarBrand>
@@ -35,7 +35,7 @@ const Header = (props) => {
           </span>
         </NavbarToggler>
         <Collapse isOpen={isOpen} navbar className="block-menu">
-          <Nav className="mr-0" navbar>
+          <Nav className="mr-0 px-0 px-md-5" navbar>
             <NavItem>
               <NavLink href="/components/">A propos de nous</NavLink>
             </NavItem>
