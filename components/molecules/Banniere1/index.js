@@ -7,10 +7,10 @@ import {AiOutlineCheckCircle} from 'react-icons/ai'
 function Banniere1() {
     return (
         <Banniere1Stc>
-            <div className="container-image">
+            <div className="container container-image my-2 my-md-0">
                 <Row>
                     <Col lg={7}>
-                        <img src="/img/nt.jpg" height="300" style={{marginBottom:"-100px;"}} />
+                        <img src="/img/img6.png" className="d-none d-lg-block"  />
                     </Col>
                     <Col lg={5}>
                         <div className="container-but my-2 my-4 mx-2 mx-md-4 py-2 py-md-4 px-2 px-md-4 align-self-center" style={{background:"#fff"}}>

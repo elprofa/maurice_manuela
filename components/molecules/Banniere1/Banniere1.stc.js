@@ -41,6 +41,7 @@ const Banniere1Stc=Styled.section`
                 left: 0;
                 right: 0;
                 height: 380px;
+                margin-bottom:"-100px;
             }
             
         }
