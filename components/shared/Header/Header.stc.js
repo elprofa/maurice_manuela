@@ -5,6 +5,12 @@ const HeaderStc=Styled.div`
         justify-content: end;
     }
 
+    .block-menu.autre ul {
+        @media (min-width: 991px) {
+            background: #23232e;
+        }
+    }
+
     .block-menu ul li
     {
         @media (min-width: 991px) {
@@ -30,6 +36,27 @@ const HeaderStc=Styled.div`
     .toggle
     {
         font-size:30px;
+    }
+
+    .dropdown-menu.dropdown-menu-right.show {
+        @media (min-width: 991px) {
+            border-radius: 0px;
+            background: #fafafa;
+            margin-top: -20px;
+        }
+
+        button
+        {
+            text-align:right;
+        }
+        a
+        {
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: 600;
+            color: #2d519d;
+        }
+       
     }
 `;
 

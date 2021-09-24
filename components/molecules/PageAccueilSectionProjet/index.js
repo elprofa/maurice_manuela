@@ -41,18 +41,18 @@ function PageAccueilSectionProjet(props) {
                     <Col lg={4}></Col>
                 </Row>
             </Container>
-            <img src="/img/sectionprojet.png" width="100%" />
-           <Row className="px-2 px-md-4 block-container-chiffre">
-               <Col lg={3}>
+            <img src="/img/sectionprojet.png" className="d-none d-lg-block" width="100%" />
+           <Row className="px-0 px-md-4 block-container-chiffre">
+               <Col lg={3} className="py-2 py-md-0">
                     <CardProjet texte="Experience" indice="Ans" chiffre={<Chiffre texte="5" />} />
                </Col>
-               <Col lg={3}>
+               <Col lg={3} className="py-2 py-md-0">
                     <CardProjet texte="Projets realisés" indice="Projets" chiffre={<Chiffre texte="100" />} />
                </Col>
-               <Col lg={3}>
+               <Col lg={3} className="py-2 py-md-0">
                     <CardProjet texte="Clients actifs" indice="Clients" chiffre={<Chiffre texte="30" />} />
                </Col>
-               <Col lg={3}>
+               <Col lg={3} className="py-2 py-md-0">
                     <CardProjet texte="Pays couverts" indice="Pays" chiffre={<Chiffre texte="3" />} />
                </Col>
            </Row>
