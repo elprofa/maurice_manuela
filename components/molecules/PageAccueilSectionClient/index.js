@@ -26,8 +26,10 @@ function PageAccueilSectionClient() {
                         Ils nous ont fait confiance et n'ont pas été déçus !
                     </Title>
                     <Texte className="h5 py-2 py-md-3">
-                        Chez Dubani nous travaillons avec nos clients,pour nos clients. 
-                        Nous leur garantissons ainsi une satisfaction effective.
+                        Nous avons travaillé avec des startups, des petites entreprises et de grandes
+                         entreprises avec des spécialités allant de la conception et du développement de site
+                         Web à l'optimisation des moteurs de recherche et à la conception de logos. Notre équipe
+                         talentueuse propose des stratégies innovantes et des résultats reconnaissables.
 
                     </Texte>
                </Col>

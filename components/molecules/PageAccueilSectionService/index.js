@@ -27,7 +27,7 @@ function PageAccueilSectionService(props) {
                     </Col>
                 </Row>
                 <Row className="my-2 my-md-5">
-                    <Col lg={4} className="px-2 px-md-4 pt-4 pt-md-0">
+                    <Col lg={3} className="mt-0 mt-md-5 px-2 px-md-4 pt-4 pt-md-5">
                         <CardService 
                             icon={<AiOutlineFileSearch/>} 
                             title={ <Title niveau={5}>
@@ -46,16 +46,18 @@ function PageAccueilSectionService(props) {
                         }
                         />
                     </Col>
-                    <Col lg={4} className="px-2 px-md-4 py-4 py-md-0">
+                    <Col lg={3} className="px-2 px-md-4 py-4 py-md-0">
                         <CardService className="mt-0 mt-md-5"
                             icon={<AiOutlineFileSearch/>} 
                             title={ <Title niveau={5}>
-                            WEB & MOBILE DEVELOPMENT
+                            WEB Design
                             </Title> }
                             texte={
                                 <p>
-                                    Dubani concoit des sites internet Et des applications sur mesure De A à Z, en prenant
-                                    en compte Vos exigences personnelles
+                                    Nous prenons très au sérieux votre investissement dans le site Web
+                                    et le marketing en ligne de votre entreprise.En mettant l'accent sur 
+                                    la fourniture à nos clients des meilleures solutions de conception de 
+                                    site Web au Maroc
                                 </p>
                             }
                         bouton={
@@ -65,7 +67,27 @@ function PageAccueilSectionService(props) {
                         }
                         />
                     </Col>
-                    <Col lg={4} className="mt-0 mt-md-5 px-2 px-md-4">
+                    <Col lg={3} className="px-2 px-md-4 py-0 py-md-0">
+                        <CardService className="mt-0 mt-md-5"
+                            icon={<AiOutlineFileSearch/>} 
+                            title={ <Title niveau={5}>
+                           E-COMMERCE
+                            </Title> }
+                            texte={
+                                <p>
+                                    Nos concepteur de site Web professionnels utilisent les technologies
+                                    de commerce électronique les plus recentes et les plus performantes pour 
+                                    aider nos clients à atteindre leurs objectifs de vente en ligne,année après année.
+                                </p>
+                            }
+                        bouton={
+                            <Bouton className="btn my-md-3 my-2" >
+                                <BsArrowRight />
+                            </Bouton>
+                        }
+                        />
+                    </Col>
+                    <Col lg={3} className="mt-0 mt-md-5 py-4 py-md-0 px-2 px-md-4">
                         <CardService className="mt-0 mt-md-5"
                             icon={<AiOutlineFileSearch/>} 
                             title={ <Title niveau={5}>

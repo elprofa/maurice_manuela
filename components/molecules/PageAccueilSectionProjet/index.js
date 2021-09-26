@@ -34,8 +34,9 @@ function PageAccueilSectionProjet(props) {
                             Augmenter le chiffre d'affaires de votre société en ameliorant votre presence sur le web!
                         </Title>
                         <Texte className="h5 py-2 py-md-3">
-                            Dubani  est une agence de conseil digital. Son rôle c'est 
-                            D'assurer la réalisation de tous vos projets de developpement d'applications Web et mobile.
+                           Nous avons aidé plusieurs entreprises au Maroc et dans le monde à
+                           acquerir un avantage conccurentiel dans leur industrie tout en offrant un niveau inégalé d'attention
+                           personnelle et de soutien à la clientèle.
                         </Texte>
                     </Col>
                     <Col lg={4}></Col>

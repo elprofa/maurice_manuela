@@ -3,8 +3,16 @@ import Styled from 'styled-components'
 const TitleStc=Styled.div`
     h1
     {
-        font-size:48px;
+        @media (min-width: 991px) {
+            font-size:48px;
+        }
+        font-size:35px;
         font-weight:900;
+        span
+        {
+            position:relative;
+            z-index:3
+        }
     }
     h2
     {
@@ -22,6 +30,15 @@ const TitleStc=Styled.div`
         display: inline-block;
         margin-right:10px;
         vertical-align: middle;
+    }
+
+    .imgComposant
+    {
+        position: absolute;
+        left: -50px;
+        top: 10px;
+        width: 130px;
+        z-index:0;
     }
 `;
 export default TitleStc;

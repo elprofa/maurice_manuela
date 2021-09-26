@@ -41,7 +41,7 @@ const Header = (props) => {
   return (
     <HeaderStc>
       <Navbar expand="md" className="">
-        <NavbarBrand href="/">
+        <NavbarBrand href="/" className="pl-0 pl-md-5 ml-0 ml-md-5">
           <img src="/img/logo.svg" height="40"/>
         </NavbarBrand>
         <NavbarToggler onClick={toggle}>
@@ -73,7 +73,7 @@ const Header = (props) => {
                   </Link>
                 </DropdownItem>
                 <DropdownItem>
-                  <Link href="/marketing-digital">
+                  <Link href="/referencement">
                     Referencement
                   </Link>
                 </DropdownItem>

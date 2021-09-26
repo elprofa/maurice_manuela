@@ -15,12 +15,12 @@ function PageAccueilSectionEquipe() {
         <PageAccueilSectionEquipeStc>
              <Container>
                 <Row className="py-0 py-md-5">
-                    <Col lg={6} className="right">
-                    </Col>
                     <Col lg={6}>
                         <Title niveau={1}>
                             Notre Equipe
                         </Title>
+                    </Col>
+                    <Col lg={6} className="right">
                     </Col>
                 </Row>
                 <Row className="py-0 py-md-5">

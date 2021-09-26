@@ -5,9 +5,11 @@ function Title(props) {
     if(props.niveau==1)
     {
         return (
-            <TitleStc>
-                <h1>
-                    {props.children} 
+            <TitleStc className={props.className}>
+                
+                <h1 className="mt-0 mt-md-4">
+                    <img src="/img/composant.png" className="imgComposant" />
+                    <span>{props.children} </span>
                 </h1>
             </TitleStc>
         )
@@ -15,7 +17,7 @@ function Title(props) {
     else if(props.niveau==2)
     {
         return (
-            <TitleStc>
+            <TitleStc className={props.className}>
                 <h2>
                     {props.children} 
                 </h2>

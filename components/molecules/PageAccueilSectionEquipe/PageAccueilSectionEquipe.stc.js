@@ -1,6 +1,10 @@
 import Styled from 'styled-components'
 
 const PageAccueilSectionEquipeStc=Styled.section`
-    background:#fafafa
+    background:#fafafa;
+    .imgComposant
+    {
+        top: -40px;
+    }
 `;
 export default PageAccueilSectionEquipeStc;

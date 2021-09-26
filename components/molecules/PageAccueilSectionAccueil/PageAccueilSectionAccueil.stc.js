@@ -11,7 +11,10 @@ const PageAccueilSectionAccueilStc=Styled.section`
         overflow:hidden;
     }
    
-    
+    .imgComposant
+    {
+        display:none;
+    }
     .row
     {
         margin-left:0px !important;

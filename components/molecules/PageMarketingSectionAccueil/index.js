@@ -15,7 +15,7 @@ function PageMarketingSectionAccueil() {
                         <Title className="py-2 py-md-3">
                             Dubani Agency 
                         </Title>
-                        <Title niveau={1} className="mx-0 mx-md-5 ">
+                        <Title niveau={1} className="">
                             Prenez de l'avance sur vos concurrents avec un marketing numérique qui fonctionne., 
                         </Title>
                         <Texte className="h5 py-2 py-md-3 ">

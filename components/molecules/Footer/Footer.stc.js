@@ -3,12 +3,12 @@ const FooterStc=Styled.section`
 background: #23232e;
 .icon
 {
-    font-size:70px;
+    font-size:35px;
 }
 .value
 {
     font-weight:400;
-    font-size:22px;
+    font-size:18px;
     display:block;
 }
 

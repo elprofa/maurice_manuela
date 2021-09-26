@@ -10,7 +10,7 @@ function CardService(props) {
     return (
         <CardServiceStc>
             <Card className={props.className}>
-                <span className="icon my-2 my-md-4">
+                <span className="icon my-2 my-md-0">
                     {props.icon}
                 </span>
                 <CardBody>

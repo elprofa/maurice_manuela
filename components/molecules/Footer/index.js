@@ -7,25 +7,27 @@ import {
 }
 from 'reactstrap';
 import Title from '../../shared/Title';
-import {AiFillPhone} from 'react-icons/ai';
+import {AiFillPhone,AiOutlineMail} from 'react-icons/ai';
+import {BsMap} from 'react-icons/bs';
+import {FaFacebookSquare,FaInstagram} from 'react-icons/fa';
 import Texte from '../../shared/Texte';
 
 function Footer() {
     return (
         <FooterStc>
             <Container className="py-2 py-md-5">
-                <div className="divLogo text-center py-3 py-md-5" style={{margin:"auto",display:"block"}}>
+                <div className="divLogo text-center py-3 py-md-3" style={{margin:"auto",display:"block"}}>
                     <img src="/img/logo.svg"  height="80" />
                 </div>
                 <Row>
                     <Col lg={4}>
                         <Row>
-                            <Col sm={3}>
+                            <Col sm={2} className="align-self-center">
                                 <span className="icon">
                                     <AiFillPhone />
                                 </span>
                             </Col>
-                            <Col sm={8} className="my-4 align-self-center">
+                            <Col sm={10} className="align-self-center">
                                 <Title niveau={2}>
                                     <span className="mt-2" style={{fontSize:"16px",lineHeight:"1.5em"}}>
                                         Numero tel
@@ -39,18 +41,18 @@ function Footer() {
                     </Col>
                     <Col lg={4}>
                         <Row>
-                            <Col sm={3}>
+                            <Col sm={2} className="align-self-center">
                                 <span className="icon">
-                                    <AiFillPhone />
+                                    <AiOutlineMail />
                                 </span>
                             </Col>
-                            <Col sm={8} className="align-self-center">
+                            <Col sm={10} className="align-self-center">
                                 <Title niveau={2}>
                                     <span className="mt-2" style={{fontSize:"16px",lineHeight:"1.5em"}}>
-                                        Numero tel
+                                        Adresse E-mail
                                     </span>
                                     <span className="value py-2">
-                                        +241 077 48 43 26
+                                        info@dubaniagency.com
                                     </span>
                                 </Title>
                             </Col>
@@ -58,18 +60,18 @@ function Footer() {
                     </Col>
                     <Col lg={4}>
                         <Row>
-                            <Col sm={3}>
+                            <Col sm={2} className="align-self-center">
                                 <span className="icon">
-                                    <AiFillPhone />
+                                    <BsMap />
                                 </span>
                             </Col>
-                            <Col sm={8} className="align-self-center">
+                            <Col sm={10} className="align-self-center">
                                 <Title niveau={2}>
                                     <span className="mt-2" style={{fontSize:"16px",lineHeight:"1.5em"}}>
-                                        Numero tel
+                                        Adresse du bureau
                                     </span>
                                     <span className="value py-2">
-                                        +241 077 48 43 26
+                                       31 Allee des pruniers,Casablanca
                                     </span>
                                 </Title>
                             </Col>
@@ -120,8 +122,8 @@ function Footer() {
                         </Title>
                         <ul>
                             <li>
-                               <a>Dubani Agency</a>
-                               <a>dubaniagency</a>
+                               <a><span style={{fontSize: "25px",marginRight: "10px"}}><FaFacebookSquare /></span>Dubani Agency</a>
+                               <a><span style={{fontSize: "25px",marginRight: "10px"}}><FaInstagram /></span>dubaniagency</a>
                             </li> 
                         </ul>
                     </Col>

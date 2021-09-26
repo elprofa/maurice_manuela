@@ -4,7 +4,7 @@ import PageMarketingSectionPackage1 from "../components/molecules/PageMarketingS
 import PageMarketingSectionPackage2 from "../components/molecules/PageMarketingSectionPackage2";
 import PageMarketingSectionProspecte from "../components/molecules/PageMarketingSectionProspecte";
 
-const Index = (props) => {
+const MarketingDigital = (props) => {
   return (
     <>
       <PageMarketingSectionAccueil />
@@ -16,4 +16,4 @@ const Index = (props) => {
 };
 
 
-export default Index;
+export default MarketingDigital;

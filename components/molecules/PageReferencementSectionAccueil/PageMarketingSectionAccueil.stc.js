@@ -1,15 +1,6 @@
 import Styled from 'styled-components'
 
-const PageWebSectionAccueilStc=Styled.section`
-
-    @media (min-width: 991px) {
-        height:100vh;
-    }
-    
-    @media (min-width: 991px) {
-        margin-top:-80px;
-        overflow:hidden;
-    }
+const PageReferencementSectionAccueilStc=Styled.section`
    
     
     .row
@@ -41,4 +32,4 @@ const PageWebSectionAccueilStc=Styled.section`
     
      
 `;
-export default PageWebSectionAccueilStc;
+export default PageReferencementSectionAccueilStc;

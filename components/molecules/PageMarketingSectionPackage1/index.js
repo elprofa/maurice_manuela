@@ -15,7 +15,7 @@ function PageMarketingSectionPackage1(props) {
                             <Title className="py-2 py-md-3">
                             Packgage
                             </Title>
-                            <Title niveau={1} className="mx-0 mx-md-5 ">
+                            <Title niveau={1} className="">
                                 Pourquoi choisir dubani agency ?
                             </Title>
                             
