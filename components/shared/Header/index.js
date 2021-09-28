@@ -51,13 +51,17 @@ const Header = (props) => {
         </NavbarToggler>
         <Collapse isOpen={isOpen} navbar className={autre_page}>
           <Nav className="mr-0 px-0 px-md-5" navbar>
-            <NavItem>
-              <NavLink href="/components/">A propos de nous</NavLink>
+            <NavItem className="py-2 py-md-3 align-self-center">
+                <Link href="/blog/">
+                  A propos de nous
+                </Link>
             </NavItem>
-            <NavItem>
-              <NavLink href="/components/">Nos projets</NavLink>
+            <NavItem className="py-2 py-md-3 align-self-center">
+                <Link href="/blog/">
+                  Blog
+                </Link>
             </NavItem>
-            <UncontrolledDropdown nav inNavbar>
+            <UncontrolledDropdown nav inNavbar className="py-2 py-md-3 align-self-center">
               <DropdownToggle nav caret>
                 Nos Service
               </DropdownToggle>
@@ -80,8 +84,10 @@ const Header = (props) => {
               </DropdownMenu>
             </UncontrolledDropdown>
             
-            <NavItem>
-              <NavLink href="/components/">Contact</NavLink>
+            <NavItem className="py-2 py-md-3 align-self-center">
+                <Link href="/blog/">
+                  Contact
+                </Link>
             </NavItem>
           </Nav>
         </Collapse>
