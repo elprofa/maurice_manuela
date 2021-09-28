@@ -33,7 +33,7 @@ const Header = (props) => {
   
   let autre_page="block-menu";
 
-  if(pathname!="/")
+  if(pathname!="/" && pathname!="/contact")
   {
     autre_page="block-menu autre";
   }
@@ -85,7 +85,7 @@ const Header = (props) => {
             </UncontrolledDropdown>
             
             <NavItem className="py-2 py-md-3 align-self-center">
-                <Link href="/blog/">
+                <Link href="/contact/">
                   Contact
                 </Link>
             </NavItem>
