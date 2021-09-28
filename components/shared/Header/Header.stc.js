@@ -13,10 +13,24 @@ const HeaderStc=Styled.div`
 
     .block-menu ul li
     {
+        @media (max-width: 991px)
+        {
+            text-align:right;
+            width:100%;
+        }
         @media (min-width: 991px) {
             margin:auto 10px;
-        }
 
+            height:auto !important;
+        }
+        a 
+        {
+            color:#333;
+            @media (min-width: 991px) {
+                color:#fff;
+            }
+            
+        }
         font-weight:bold;
     }
 
