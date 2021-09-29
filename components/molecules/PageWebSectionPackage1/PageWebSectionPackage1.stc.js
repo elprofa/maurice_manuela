@@ -12,7 +12,12 @@ const PageWebSectionPackage1Stc=Styled.section`
 
 .h3
 {
+    h3
+    {
+        font-weight:900 !important;
+    }
     background:#dcdbe4;
+    cursor:pointer;
     font-weight:900 !important;
     &.active
     {

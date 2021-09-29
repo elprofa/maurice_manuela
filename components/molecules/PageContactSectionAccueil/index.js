@@ -35,37 +35,27 @@ function PageContactSectionAccueil() {
                 <Col lg={5} className="right align-self-center py-md-5 py-2">
 
                    <form className="pt-2 pt-md-5 mt-0 mt-md-5 px-0 px-md-4">
-                    <div className="form-group">
-                            <label>Nom *</label>
-                            <input type="text" style={{background:"transparent",border:"0px",borderRadius:"0px",borderBottom:"1px solid #fff"}} className="form-control" />
+                    <div className="form-group py-md-2 py-2">
+                            <input placeholder="Nom *" type="text" style={{background:"transparent",border:"0px",borderRadius:"0px",borderBottom:"1px solid #fff"}} className="form-control" />
                         </div>
                     
-                        <div className="form-group">
-                            <label>Adresse E-mail *</label>
-                            <input type="text" style={{background:"transparent",border:"0px",borderRadius:"0px",borderBottom:"1px solid #fff"}} className="form-control input" />
+                        <div className="form-group py-md-2 py-2">
+                            <input placeholder="Adresse E-mail *" type="text" style={{background:"transparent",border:"0px",borderRadius:"0px",borderBottom:"1px solid #fff"}} className="form-control input" />
                         </div> 
-                        <div className="form-group">
-                            <label>Phone *</label>
-                            <input type="text" style={{background:"transparent",border:"0px",borderRadius:"0px",borderBottom:"1px solid #fff"}} className="form-control" />
+                        <div className="form-group py-md-2 py-2">
+                            <input placeholder="Phone *" type="text" style={{background:"transparent",border:"0px",borderRadius:"0px",borderBottom:"1px solid #fff"}} className="form-control" />
                         </div> 
-                        <div className="form-group">
-                            <label>Quel service soliciter *</label>
+                        <div className="form-group py-md-2 py-2">
                             <select className="form-control" style={{background:"transparent",border:"0px",borderRadius:"0px",borderBottom:"1px solid #fff"}}>
-                                <option className="">- Choisir -</option>
+                                <option className="">Quel service soliciter *</option>
                             </select>
                         </div> 
-                        <div className="form-group">
-                            <label>Quel service soliciter *</label>
-                            <select className="form-control" style={{background:"transparent",border:"0px",borderRadius:"0px",borderBottom:"1px solid #fff"}}>
-                                <option className="">- Choisir -</option>
-                            </select>
-                        </div>  
-                        <div className="form-group">
-                            <label>Description du projet *</label>
-                            <textarea rows="2" className="form-control" style={{background:"transparent",border:"0px",borderRadius:"0px",borderBottom:"1px solid #fff"}}>
+                        
+                        <div className="form-group py-md-2 py-2">
+                            <textarea placeholder="Description du projet *" rows="2" className="form-control" style={{background:"transparent",border:"0px",borderRadius:"0px",borderBottom:"1px solid #fff"}}>
                             </textarea>
                         </div>  
-                        <div className="form-group">
+                        <div className="form-group py-md-2 py-2">
                             <Bouton className="btn">
                                 DEMANDEZ UNE CONSULTATION AUJOURD'HUI
                             </Bouton>

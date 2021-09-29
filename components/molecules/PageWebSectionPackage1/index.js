@@ -11,104 +11,87 @@ import { useState } from 'react';
 
 function PageWebSectionPackage1(props) {
 
-    const [actif,setActif]=useState(1);
-
-    const displyContent=(valeur)=>{
-        // setActif(valeur);
-
-        if(valeur==1){
-
-            return(
-                <div className="block px-2 px-md-4 py-2 py-md-4">
-                    <div className="block-image" style={{height:"250px",overflow:"hidden"}}>
-                        <img src="/img/pc.jpg" width="100%" />
-                    </div>
-                    <div className="block-caption">
-                        <Title niveau={5} className="my-2 my-md-4">
-                            Analyse du traffic web
-                        </Title>
-                        <Texte>
-                            L'analyse du traffic de votre site web vous permet de determiner s'il a attiré le nombre de prospects
-                            escompté. Dubani vous aide à mettre en place les différents outils nécessaire pour analyser votre traffic Web.
-                        </Texte>
-
-                        <Bouton className="btn">
-                            <BsArrowRight />
-                        </Bouton>
-                    </div>
-                </div>
-            )
-        }
-        if(valeur==2){
-
-            return(
-                <div className="block px-2 px-md-4 py-2 py-md-4">
-                    <div className="block-image" style={{height:"250px",overflow:"hidden"}}>
-                        <img src="/img/pc.jpg" width="100%" />
-                    </div>
-                        <div className="block-caption">
-                            <Title niveau={5} className="my-2 my-md-4">
-                                Analyse du traffic web 2
-                            </Title>
-                            <Texte>
-                                L'analyse du traffic de votre site web vous permet de determiner s'il a attiré le nombre de prospects
-                                escompté. Dubani vous aide à mettre en place les différents outils nécessaire pour analyser votre traffic Web.
-                            </Texte>
-
-                            <Bouton className="btn">
-                                <BsArrowRight />
-                            </Bouton>
-                        </div>
-                </div>
-            )
-        }
-        if(valeur==3){
-
-            return(
-                <div className="block px-2 px-md-4 py-2 py-md-4">
-                    <div className="block-image" style={{height:"250px",overflow:"hidden"}}>
-                        <img src="/img/pc.jpg" width="100%" />
-                    </div>
-                        <div className="block-caption">
-                            <Title niveau={5} className="my-2 my-md-4">
-                                Analyse du traffic web
-                            </Title>
-                            <Texte>
-                                L'analyse du traffic de votre site web vous permet de determiner s'il a attiré le nombre de prospects
-                                escompté. Dubani vous aide à mettre en place les différents outils nécessaire pour analyser votre traffic Web.
-                            </Texte>
-
-                            <Bouton className="btn">
-                                <BsArrowRight />
-                            </Bouton>
-                        </div>
-                </div>
-            )
-        }
-        if(valeur==4){
-
-            return(
-                <div className="block px-2 px-md-4 py-2 py-md-4">
-                    <div className="block-image" style={{height:"250px",overflow:"hidden"}}>
-                        <img src="/img/pc.jpg" width="100%" />
-                    </div>
-                        <div className="block-caption">
-                            <Title niveau={5} className="my-2 my-md-4">
-                                Analyse du traffic web
-                            </Title>
-                            <Texte>
-                                L'analyse du traffic de votre site web vous permet de determiner s'il a attiré le nombre de prospects
-                                escompté. Dubani vous aide à mettre en place les différents outils nécessaire pour analyser votre traffic Web.
-                            </Texte>
-
-                            <Bouton className="btn">
-                                <BsArrowRight />
-                            </Bouton>
-                        </div>
-                </div>
-            )
-        }
+    const [actif1,setActif1]=useState("active");
+    const [actif2,setActif2]=useState("");
+    const [actif3,setActif3]=useState("");
+    const [actif4,setActif4]=useState("");
+    const [title,setTitle]=useState("Conception de site web");
+    const [texte,setTexte]=useState(<>Notre equipe de developpement mets à votre disposition de connaissance évoluer dans les  
+        les nouvelles technologie, offrant ainsi à vos client une experience unique et moderne</>);
+    const [btn,setBtn]=useState(<Bouton className="btn">
+                        <BsArrowRight />
+                    </Bouton>);
+    const [img,setImg]=useState("/img/img-package1.png");
+    
+    const openMenu1=()=>{
+        setTitle("Conception de site web");
+        setTexte(<>Notre equipe de developpement mets à votre disposition de connaissance évoluer dans les  
+        les nouvelles technologie, offrant ainsi à vos client une experience unique et moderne</>);
+        setImg('/img/img-package1.png');
+        setBtn(
+            <Bouton className="btn">
+                <BsArrowRight />
+            </Bouton>
+        );
+         setActif1('active');
+         setActif2('');
+         setActif3('');
+         setActif4('');
+      
     }
+    const openMenu2=()=>{
+        setTitle("Conception d'applications mobiles");
+        setTexte(<>Conscient de la place que prend de plus en plus les smarthphone dans nos vie 
+        Dubani vous propose des sites Web optimiser pour l'affichage mobile. Le tout pour offrir 
+        a vos clients une experience des plus aboutit.</>);
+        setImg('/img/img-package2.png');
+        setBtn(
+            <Bouton className="btn">
+                <BsArrowRight />
+            </Bouton>
+        );
+
+        setActif1('');
+        setActif2('active');
+        setActif3('');
+        setActif4('');
+    }
+
+    const openMenu3=()=>{
+        setTitle("Marketing en ligne");
+        setTexte(<>Avoir un site web n'est utile que si vous mettez en place la campagne marketing qu'il faut pour 
+        vendre votre marqie. De part son expertise dans le domaine du marketing Numérique, Dubani s'engage 
+        a être votre partenaire Marketing Numérique</>);
+        setImg('/img/img-package3.png');
+         setBtn(
+            <Bouton className="btn">
+                <BsArrowRight />
+            </Bouton>
+        );
+
+        setActif1('');
+        setActif2('');
+        setActif3('active');
+        setActif4('');
+    }
+    const openMenu4=()=>{
+        setTitle("Analyse du traffic Web");
+        setTexte(<>L'analyse du traffic de votre site web vous permet de determiner s'il a attiré le 
+        nombre de prospects escompté. Dubani vous aide a mettre en place les différents outils 
+        nécessaire pour analyser votre traffic Web.</>);
+        setImg('/img/img-package4.png');
+        setBtn(
+           <Bouton className="btn">
+               <BsArrowRight />
+           </Bouton>
+       );
+
+       setActif1('');
+       setActif2('');
+       setActif3('');
+       setActif4('active');
+    }
+
 
     return (
         <PageWebSectionPackage1Stc className={props.className}>
@@ -130,23 +113,46 @@ function PageWebSectionPackage1(props) {
             <Container className="containerChiffre px-0">
                 <Row>
                    <Col md={7} className="pr-md-0">
-                     {
-                         displyContent(1)
-                     }
+                    <div className="block px-2 px-md-4 py-2 py-md-4">
+                        <div className="block-image" style={{height:"250px",overflow:"hidden"}}>
+                            <img src={img} alt="" width="100%" />
+                        </div>
+                        <div className="block-caption">
+                            <Title niveau={5} className="my-2 my-md-4">
+                                {
+                                    title
+                                }
+                                
+                            </Title>
+                            <Texte>
+                                {texte}
+                            </Texte>
+
+                            {
+                                btn
+                            }
+                        </div>
+                    </div>
                    </Col>
                    <Col md={5} className="pl-md-0">
-                       <Title niveau={3} onClick={()=>displyContent(1)}  className="px-2 px-md-3 mb-0 py-2 py-md-4 h3">
-                           <a>Conception de site web</a>
+                        <a onClick={openMenu1} >
+                            <Title niveau={3}  className={"px-2 px-md-3 mb-0 py-2 py-md-4 h3 "+actif1}>
+                                Conception de site web
+                            </Title>
+                        </a>
+                       <Title niveau={3} className={"px-2 px-md-3 mb-0 py-2 py-md-4 h3 "+actif2}>
+                           <a onClick={openMenu2}>Conception d'applications mobiles</a>
                        </Title>
-                       <Title niveau={3} onClick={()=>displyContent(2)} className="px-2 px-md-3 mb-0 py-2 py-md-4 h3">
-                           <a>Conception d'application mobile</a>
-                       </Title>
-                       <Title niveau={3} className="px-2 px-md-3 mb-0 py-2 py-md-4 h3">
-                           <a>Marketing en ligne</a>
-                       </Title>
-                       <Title niveau={3} className="px-2 px-md-3 mb-0 py-2 py-md-4 h3 active">
-                           <a>Analyse du traffic</a>
-                       </Title>
+                       <a onClick={openMenu3}>
+                            <Title niveau={3} className={"px-2 px-md-3 mb-0 py-2 py-md-4 h3 "+actif3}>
+                                Marketing en ligne
+                            </Title>
+                       </a>
+                       <a onClick={openMenu4}>
+                            <Title niveau={3} className={"px-2 px-md-3 mb-0 py-2 py-md-4 h3 "+actif4}>
+                                Analyse du traffic Web
+                            </Title>
+                       </a>
                    </Col>
                 </Row>
             </Container>
