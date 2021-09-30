@@ -135,4 +135,35 @@ export const GlobalCSS = createGlobalStyle`
         border-radius: 0px;
     }
 }
+
+//  pageWebSectionPackage
+
+.row-caroussel .carousel-inner
+{
+    height:500px !important;
+    img
+    {
+        width:100%;
+    }
+}
+
+.row-caroussel .imgComposant
+{
+    display:none;
+}
+.row-caroussel .containerHome.d-none.d-lg-block.container {
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    z-index: 9999;
+    top: 100px;
+
+    .colAccueilLeft.col-sm-6
+    {
+        p
+        {
+            font-size:18px;
+        }
+    }
+}
 `;

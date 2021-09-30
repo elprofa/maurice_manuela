@@ -52,7 +52,7 @@ const Header = (props) => {
         <Collapse isOpen={isOpen} navbar className={autre_page}>
           <Nav className="mr-0 px-0 px-md-5" navbar>
             <NavItem className="py-2 py-md-3 align-self-center">
-                <Link href="/blog/">
+                <Link href="/">
                   A propos de nous
                 </Link>
             </NavItem>

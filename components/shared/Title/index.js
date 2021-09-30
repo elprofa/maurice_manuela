@@ -58,10 +58,10 @@ function Title(props) {
     {
         return (
             <TitleStc className={props.className}>
-                <h7>
+                <h6>
                     <span className="trait"></span> 
                     <span>{props.children}</span>
-                </h7>
+                </h6>
             </TitleStc>
             
         )

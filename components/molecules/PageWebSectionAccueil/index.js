@@ -34,9 +34,9 @@ function PageWebSectionAccueil() {
                     </div>
                 </Col>
                 <Col lg={5} className="right d-none d-lg-block py-0 py-md-5 ">
-                    <img src="/img/web-1.png" width="100%" style={{position:"absolute",left:"0px;",top:"100px"}} />
-                    <img src="/img/web-2.png" width="100%" style={{position:"absolute",left:"0px;",top:"100px"}}  />
-                    <img src="/img/web-3.png" width="100%" style={{position:"absolute",left:"0px;",top:"100px"}}  />
+                    <img src="/img/web-1.png" width="100%" style={{position:"absolute",left:"0px",top:"100px"}} />
+                    <img src="/img/web-2.png" width="100%" style={{position:"absolute",left:"0px",top:"100px"}}  />
+                    <img src="/img/web-3.png" width="100%" style={{position:"absolute",left:"0px",top:"100px"}}  />
                 </Col>
             </Row>
           </Container>
