@@ -4,7 +4,7 @@ import {Container,Row,Col} from "reactstrap"
 import Texte from '../../shared/Texte'
 import Title from '../../shared/Title'
 import Bouton from '../../shared/Bouton'
-
+import Link from 'next/link'
 function PageReferencementSectionSeo() {
     return (
         <PageReferencementSectionSeoStc>
@@ -26,7 +26,7 @@ function PageReferencementSectionSeo() {
                 </Row>
                 <Row>
                     <Col lg={6}>
-                        <img src="/img/img7.png" width="100%" />
+                        <img src="/img/cool.png" width="100%" />
                     </Col>
                     <Col lg={6} className="align-self-center">
                         <Texte className="py-2 py-md-2">
@@ -40,8 +40,10 @@ function PageReferencementSectionSeo() {
                             10000 à 50 000 $ supplémentaires, vous auriez un excellent sur investissement.
                         </Texte>
                         <Bouton className="btn px-2 px-md-5 text-center">
+                            <Link href="/contact/">
                             DEMANDEZ UNE CONSULTATION SUR LA STRATEGIE DE SEO 
                             PERSONNALISEE
+                            </Link>
                         </Bouton>
                     </Col>
                 </Row>

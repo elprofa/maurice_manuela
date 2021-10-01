@@ -10,6 +10,7 @@ import Title from '../../shared/Title'
 import Texte from '../../shared/Texte'
 import CardClient from '../CardClient'
 import Bouton from '../../shared/Bouton'
+import Link from 'next/link'
 
 function PageAccueilSectionClient() {
     return (
@@ -51,7 +52,9 @@ function PageAccueilSectionClient() {
                             }
                         bouton={
                             <Bouton className="btn my-md-3 my-2" >
-                                Visiter le site
+                                <a href="https://gsnauto.com/" target="_blank">
+                                    Visiter le site
+                                </a>
                             </Bouton>
                         }
                         />
@@ -72,7 +75,9 @@ function PageAccueilSectionClient() {
                             }
                         bouton={
                             <Bouton className="btn my-md-3 my-2" >
-                                Visiter le site
+                                <a href="http://www.wintech.africa.com/" target="_blank">
+                                    Visiter le site
+                                </a>
                             </Bouton>
                         }
                         />
@@ -93,7 +98,9 @@ function PageAccueilSectionClient() {
                             }
                         bouton={
                             <Bouton className="btn my-md-3 my-2" >
-                                Visiter le site
+                                <a href="https://www.xpatsa.com/" target="_blank">
+                                    Visiter le site
+                                </a>
                             </Bouton>
                         }
                         />

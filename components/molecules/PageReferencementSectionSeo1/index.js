@@ -4,7 +4,7 @@ import {Container,Row,Col} from "reactstrap"
 import Texte from '../../shared/Texte'
 import Title from '../../shared/Title'
 import Bouton from '../../shared/Bouton'
-
+import Link from 'next/link'
 function PageReferencementSectionSeo() {
     return (
         <PageReferencementSectionSeoStc>
@@ -41,12 +41,14 @@ function PageReferencementSectionSeo() {
                            travaillant avec le succès de votre entreprise comme objectif global pour aussi peu que 6 000 $ par an ?.
                         </Texte>
                         <Bouton className="btn px-2 px-md-5 text-center">
+                            <Link href="/contact/">
                             DEMANDEZ UNE CONSULTATION SUR LA STRATEGIE DE SEO 
                             PERSONNALISEE
+                            </Link>
                         </Bouton>
                     </Col>
                     <Col lg={6}>
-                        <img src="/img/img8.png" width="100%" />
+                        <img src="/img/call.png" width="100%" />
                     </Col>
                    
                 </Row>

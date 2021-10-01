@@ -16,7 +16,7 @@ function PageWebSectionAccueil() {
                     <h1 className="background-overlay">Dubani agency</h1>
                     <div className="" style={{position:"relative",zIndex:1}}>
                         <Title className="py-2 py-md-3">
-                            Dubani Agency 
+                            Web design
                         </Title>
                         <Title niveau={1} className="">
                             Créer un site web personnalisée pour generer plus de traffic 

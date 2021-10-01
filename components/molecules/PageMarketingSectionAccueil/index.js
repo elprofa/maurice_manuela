@@ -13,7 +13,7 @@ function PageMarketingSectionAccueil() {
                     <h1 className="background-overlay">Dubani agency</h1>
                     <div className="px-2 px-md-5 mx-0 mx-md-5 " style={{position:"relative",zIndex:1}}>
                         <Title className="py-2 py-md-3">
-                            Dubani Agency 
+                            Marketing digital
                         </Title>
                         <Title niveau={1} className="">
                             Prenez de l'avance sur vos concurrents avec un marketing numérique qui fonctionne., 

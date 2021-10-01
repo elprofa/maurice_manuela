@@ -25,12 +25,14 @@ function PageMarketingSectionPackage1(props) {
                         
                     </Col>
                 </Row>
+                </Container>
+
                 <Row className="package-img py-2 py-md-5 px-2 px-md-5">
                     <Col lg={5}>
                         <img src="/img/img3.png" className="d-none d-lg-block" width="100%" />
                     </Col>
                     <Col lg={7}>
-                        <ul className="package-ul px-0">
+                        <ul className="package-ul px-0 px-md-5">
                             <li>
                                 <span >
                                     <AiOutlineCheckCircle />
@@ -64,7 +66,7 @@ function PageMarketingSectionPackage1(props) {
                         </ul>
                     </Col>
                 </Row>
-           </Container>
+           
         </PageMarketingSectionPackage1Stc>
     )
 }

@@ -4,6 +4,7 @@ import Bouton from '../../shared/Bouton';
 import Texte from '../../shared/Texte';
 import Title from '../../shared/Title';
 import PageAccueilSectionAccueilStc from './PageAccueilSectionAccueil.stc'
+import Link from 'next/link'
 
 function PageAccueilSectionAccueil() {
     return (
@@ -21,8 +22,10 @@ function PageAccueilSectionAccueil() {
                         <Texte className="h5 py-2 py-md-3 ">
                             Avec une agence experte dans la création de site web
                         </Texte>
-                        <Bouton className="btn px-2 px-md-5 ">
-                            Embauchez nous
+                        <Bouton className="btn ">
+                            <Link href="/contact/" className="px-2 px-md-5 ">
+                                Embauchez nous
+                            </Link>
                         </Bouton>
                     </div>
                 </Col>

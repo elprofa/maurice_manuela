@@ -4,6 +4,8 @@ import Bouton from '../../shared/Bouton'
 import Title from '../../shared/Title'
 import ReferencementSeo from '../ReferencemetSeo'
 import PageReferencementSectionEtapeStc from './PageReferencementSectionEtape.stc'
+import Link from 'next/link';
+
 function PageReferencementSectionEtape(props) {
     return (
         <PageReferencementSectionEtapeStc className={props.className}>
@@ -59,7 +61,9 @@ function PageReferencementSectionEtape(props) {
                 </Col>
                 <Col lg={12} className="my-2 my-md-5 text-center">
                     <Bouton className="btn">
-                        PARLEZ A UNE ENTREPRISE DE REFERENCEMENT AU MAROC
+                       <Link href="/contact/">
+                            PARLEZ A UNE ENTREPRISE DE REFERENCEMENT AU MAROC
+                       </Link>
                     </Bouton>
                 </Col>
             </Row>

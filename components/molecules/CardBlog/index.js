@@ -23,7 +23,7 @@ function CardBlog(props) {
     else
     {
         return (
-            <CardBlogStc className="two my-2 my-md-3">
+            <CardBlogStc className="two my-2 my-md-2">
                 <div className="card" style={{minHeight: "300px"}}>
                     <div className="card-body d-flex">
                         <h4 className="text-start d-inline-flex align-items-center align-self-center flex-wrap card-title">{props.title}</h4>

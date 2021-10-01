@@ -72,8 +72,8 @@ const Header = (props) => {
                   </Link>
                 </DropdownItem>
                 <DropdownItem>
-                  <Link href="/web-development">
-                    Web & Development
+                  <Link href="/web-design">
+                    Web design
                   </Link>
                 </DropdownItem>
                 <DropdownItem>

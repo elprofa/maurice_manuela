@@ -7,6 +7,7 @@ import CardService from '../CardService';
 import {AiOutlineFileSearch} from 'react-icons/ai'
 import {BsArrowRight} from 'react-icons/bs'
 import Bouton from '../../shared/Bouton';
+import Link from 'next/link'
 
 function PageAccueilSectionService(props) {
     return (
@@ -41,7 +42,9 @@ function PageAccueilSectionService(props) {
                             }
                         bouton={
                             <Bouton className="btn my-md-3 my-2" >
-                                <BsArrowRight />
+                                <Link href="/marketing-digital">
+                                    <BsArrowRight />
+                                </Link>
                             </Bouton>
                         }
                         />
@@ -49,6 +52,7 @@ function PageAccueilSectionService(props) {
                     <Col lg={3} className="px-2 px-md-4 py-4 py-md-0">
                         <CardService className="mt-0 mt-md-5"
                             icon={<AiOutlineFileSearch/>} 
+                            
                             title={ <Title niveau={5}>
                             WEB Design
                             </Title> }
@@ -62,7 +66,9 @@ function PageAccueilSectionService(props) {
                             }
                         bouton={
                             <Bouton className="btn my-md-3 my-2" >
-                                <BsArrowRight />
+                                <Link href="/web-design">
+                                    <BsArrowRight />
+                                </Link>
                             </Bouton>
                         }
                         />
@@ -101,7 +107,9 @@ function PageAccueilSectionService(props) {
                             }
                         bouton={
                             <Bouton className="btn my-md-3 my-2" >
-                                <BsArrowRight />
+                                <Link href="/referencement">
+                                    <BsArrowRight />
+                                </Link>
                             </Bouton>
                         }
                         />

@@ -5,7 +5,7 @@ import {
     CardTitle, CardSubtitle, Button
   } from 'reactstrap';
 import Bouton from '../../shared/Bouton';
-
+import Link from 'next/link'
 
 function CardPackage(props) {
     return (
@@ -14,7 +14,7 @@ function CardPackage(props) {
                 <CardBody>
                     <CardTitle tag="h5">{props.title}</CardTitle>
                     <CardText>{props.texte}</CardText>
-                    <Bouton className="btn">Embauchez nous</Bouton>
+                    <Bouton className="btn"><Link href="/contact/">Embauchez nous</Link></Bouton>
                 </CardBody>
             </Card>
         </CardPackageStc>

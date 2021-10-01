@@ -5,7 +5,7 @@ import Texte from '../../shared/Texte'
 import Title from '../../shared/Title'
 import ReferencementTarif from '../ReferencemetTarif'
 import PageReferencementSectionTarifStc from './PageReferencementSectionTarif.stc'
-
+import Link from 'next/link'
 const plan1=[
     {
         item:"Audit de site Web"
@@ -91,7 +91,9 @@ function PageReferencementSectionTarif() {
                     </Col>
                     <Col lg={12} className="my-2 my-md-5 text-center">
                     <Bouton className="btn">
-                        PLANIFIER UNE CONSULTATION DES AUJOURD'HUI !
+                        <Link href="/contact/">
+                            PLANIFIER UNE CONSULTATION DES AUJOURD'HUI !
+                        </Link>
                     </Bouton>
                 </Col>
                 </Row>

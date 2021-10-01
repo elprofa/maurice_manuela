@@ -95,9 +95,9 @@ const MyCaroussel = (props) => {
         key={index+""+item.src}
         
       >
-        <img src={item.src} alt={item.altText} />
+        <img src={item.src} alt={item.altText} className="d-none d-lg-block " />
 
-        <Container className="containerHome d-none d-lg-block ">
+        <Container className="containerHome ">
           <Row>
             <Col sm={6}>
 
