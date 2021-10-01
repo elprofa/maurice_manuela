@@ -48,7 +48,7 @@ function PageReferencementSectionSeo() {
                         </Bouton>
                     </Col>
                     <Col lg={6}>
-                        <img src="/img/call.png" width="100%" />
+                        <img src="/img/call.PNG" width="100%" />
                     </Col>
                    
                 </Row>

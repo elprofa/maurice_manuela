@@ -26,7 +26,7 @@ function PageReferencementSectionSeo() {
                 </Row>
                 <Row>
                     <Col lg={6}>
-                        <img src="/img/cool.png" width="100%" />
+                        <img src="/img/cool.PNG" width="100%" />
                     </Col>
                     <Col lg={6} className="align-self-center">
                         <Texte className="py-2 py-md-2">
