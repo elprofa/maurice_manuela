@@ -17,7 +17,7 @@ function PageAccueilSectionAccueil() {
                             Dubani Agency 
                         </Title>
                         <Title niveau={1} className="">
-                            Créer un site web personnalisée pour générer plus de trafic, 
+                            Créer un site web personnalisée pour générer plus de trafic 
                         </Title>
                         <Texte className="h5 py-2 py-md-3 ">
                             Avec une agence experte dans la création de site web
