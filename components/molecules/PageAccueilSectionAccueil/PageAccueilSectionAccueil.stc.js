@@ -21,31 +21,40 @@ const PageAccueilSectionAccueilStc=Styled.section`
         margin-right:0px !important
     }
 
-     .background-overlay
-     {
-         display:none;
-        @media (min-width: 991px) {
-            display:block;
-            font-size: 225px;
-            font-weight: 900;
-            position: absolute;
-            width: 100vw;
-            opacity: 0.1;
-            color: #159caa;
-            height: 240px;
-            overflow: hidden;
-            z-index: 0;
-            left: -52px;
-            top: -64px;
-        }
-        
-     }
+    
 
      .right
      {
          background:url(/img/img2.png);
          background-size:cover;
          height:100vh;
+         -webkit-animation-name: backgroundEffect;
+         animation-duration: 30s;
+         animation-iteration-count: infinite;
      }
+     .PageAccueilSectionAccueilCover
+      {
+        background: #1530aa;
+        height: 100vh;
+        width: 0%;
+        -webkit-animation-name: coverAnimation;
+         animation-duration: 3s;
+      }
+
+     @keyframes backgroundEffect {
+        0% {background-position: 0% 0%;}
+        25% {background-position: 10% 30%}
+        50% {background-position: 30% 0%}
+        75% {background-position: 30% 30%}
+        100% {background-position: 0% 0%;}
+      }
+
+    
+      @keyframes coverAnimation {
+        0% {width:100%;background: #1530aa;}
+        100% {width:0%;background: transparent;}
+      }
+
+      
 `;
 export default PageAccueilSectionAccueilStc;
