@@ -32,14 +32,9 @@ const Header = (props) => {
   
   let autre_page="block-menu";
 
-  if(pathname!="/" && pathname!="/contact")
-  {
-    autre_page="block-menu autre";
-  }
-
   return (
     <HeaderStc>
-      <Navbar expand="md" className="">
+      <Navbar expand="md" className="container">
         <NavbarBrand href="/" className="pl-0 pl-md-5 ml-0 ml-md-5">
           <span className="logo">
           Manuela & Maurice
@@ -54,40 +49,23 @@ const Header = (props) => {
           <Nav className="mr-0 px-0 px-md-5" navbar>
             <NavItem className="py-2 py-md-3 align-self-center">
                 <Link href="/">
-                  A propos de nous
+                  Accueil
                 </Link>
             </NavItem>
             <NavItem className="py-2 py-md-3 align-self-center">
-                <Link href="/blog/">
-                  Blog
+                <Link href="/libreville/">
+                  Libreville
                 </Link>
             </NavItem>
-            <UncontrolledDropdown nav inNavbar className="py-2 py-md-3 align-self-center">
-              <DropdownToggle nav caret>
-                Nos Service
-              </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem >
-                  <Link href="/marketing-digital">
-                    Marketing digital
-                  </Link>
-                </DropdownItem>
-                <DropdownItem>
-                  <Link href="/web-design">
-                    Web design
-                  </Link>
-                </DropdownItem>
-                <DropdownItem>
-                  <Link href="/referencement">
-                    Referencement
-                  </Link>
-                </DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
+            <NavItem className="py-2 py-md-3 align-self-center">
+                <Link href="/abidjan">
+                  Abidjan
+                </Link>
+            </NavItem>
             
             <NavItem className="py-2 py-md-3 align-self-center">
-                <Link href="/contact/">
-                  Contact
+                <Link href="/rsvp/">
+                  RSVP
                 </Link>
             </NavItem>
           </Nav>

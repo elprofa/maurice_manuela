@@ -8,7 +8,7 @@ function SectionAbidjan() {
             <div className="container">
                 <div className="row">
                     <div className="col-md-6">
-                        <img src="/img/2.png" style={{width:"100%"}} />
+                        <img src="/img/22.png" style={{width:"100%"}} />
                     </div>
                     <div className="col-md-6 align-self-center">
                         <h1 className=" py-2">Abidjan</h1>

@@ -15,7 +15,7 @@ function MySectionDate() {
                                 <div className="date py-3">30 Juillet</div>
                             </div>
                             <div className="annee py-3">2022</div>
-                            <a href="" className="btn form-control">View detail</a>
+                            <a href="/libreville" className="btn form-control">View detail</a>
                         </div>
                         <div className="col-md-6">
                             <div className="container_date text-center py-4">
@@ -24,7 +24,7 @@ function MySectionDate() {
                                 <div className="date py-3">13 Août </div>
                             </div>
                             <div className="annee py-3">2022</div>
-                            <a href="" className="btn form-control">View detail</a>
+                            <a href="/abidjan" className="btn form-control">View detail</a>
                         </div>
                     </div>
                 </div>

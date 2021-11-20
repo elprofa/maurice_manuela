@@ -16,6 +16,7 @@ const MySectionDateStc=Styled.div`
     .div_date
     {
         background:url(/img/img4.jpg);
+        background-size:100%;
     }
 
     .ville

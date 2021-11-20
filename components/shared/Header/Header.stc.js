@@ -1,7 +1,10 @@
 import Styled from "styled-components";
 import { theme } from "../../../theme";
 const HeaderStc=Styled.div`
-
+    background-color:#192a48;
+    *{
+        color:#fff !important;
+    }
     .logo
     {
         font-size: 1.5rem;
@@ -42,7 +45,7 @@ const HeaderStc=Styled.div`
         {
             color:#333;
             @media (min-width: 991px) {
-                color:#fff;
+                color:#333;
             }
             
         }
