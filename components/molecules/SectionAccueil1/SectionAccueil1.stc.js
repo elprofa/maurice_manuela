@@ -16,6 +16,15 @@ const SectionAccueil1Stc=Styled.div`
         overflow: hidden;
         border-radius: 100%;
         margin:auto;
+        @media (max-width: 476px) {
+            width: 200px;
+            height:200px;
+
+            img
+            {
+                width: 200px !important; 
+            }
+        }
     }
 
     p
@@ -26,9 +35,12 @@ const SectionAccueil1Stc=Styled.div`
 
     .form
     {
-        background:url(/img/img41.jpg);
-        background-size:100%;
-        background-repeat:no-repeat;
+        @media (min-width: 476px) {
+            background:url(/img/img41.jpg);
+            background-size:100%;
+            background-repeat:no-repeat;
+        }
+       
 
         input,select
         {
