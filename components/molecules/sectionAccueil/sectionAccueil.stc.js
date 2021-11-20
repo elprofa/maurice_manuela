@@ -24,6 +24,9 @@ const SectionAccueilSrc=Styled.div`
             position: relative;
             top:30vh;
             color:#fff !important;
+            @media (max-width: 476px) {
+                top: 10vh;
+            }
             top: 30vh;
             padding-top: 30px;
             padding-bottom: 30px;
