@@ -1,6 +1,21 @@
 import Styled from "styled-components";
 import { theme } from "../../../theme";
 const HeaderStc=Styled.div`
+
+    .logo
+    {
+        font-size: 1.5rem;
+        font-family: 'Dancing Script';
+        line-height: 50px;
+        top: 20px;
+        font-weight:600;
+
+        div
+        {
+            background-image:url('/img1.jpg');
+        }
+    }
+
     .block-menu.collapse.navbar-collapse {
         justify-content: end;
     }

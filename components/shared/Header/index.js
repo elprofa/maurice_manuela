@@ -19,7 +19,6 @@ import Link from 'next/link'
 import HeaderStc from './Header.stc'
 
 import {AiOutlineMenu} from 'react-icons/ai'
-import Router from "next/router";
 import { useRouter } from "next/router";
 
 const Header = (props) => {
@@ -42,7 +41,9 @@ const Header = (props) => {
     <HeaderStc>
       <Navbar expand="md" className="">
         <NavbarBrand href="/" className="pl-0 pl-md-5 ml-0 ml-md-5">
-          <img src="/img/logo.svg" height="40"/>
+          <span className="logo">
+          Manuela & Maurice
+          </span>
         </NavbarBrand>
         <NavbarToggler onClick={toggle}>
           <span className="toggle">

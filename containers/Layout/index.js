@@ -15,6 +15,10 @@ const Layout = ({ children, ...props }) => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="stylesheet" href="https://use.typekit.net/pgv8psy.css" />
         <link rel="shortcut icon" href="/img/favicon.ico" />
+        <link
+          href="https://fonts.googleapis.com/css?family=Dancing+Script|Lato&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       <GlobalCSS />
       <Header /> 
