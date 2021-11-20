@@ -2,7 +2,7 @@ import Styled from 'styled-components'
 
 const MySectionDateStc=Styled.div`
     
-    height:100vh;
+    min-height:100vh;
     width:100%;
     background-size:100% auto;
 

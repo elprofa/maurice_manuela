@@ -1,7 +1,7 @@
 import Styled from 'styled-components';
 
 const SectionAccueilSrc=Styled.div`
-    height: 100vh:;
+    min-height: 100vh:;
     background:rgb(0,0,0,.7);
 
     div.bg
