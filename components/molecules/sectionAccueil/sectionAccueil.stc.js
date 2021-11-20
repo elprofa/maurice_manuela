@@ -37,6 +37,7 @@ const SectionAccueilSrc=Styled.div`
             {
                 font-size: 5rem;
                 font-family: 'Dancing Script';
+                color:#ddc893;
             }
         }
 

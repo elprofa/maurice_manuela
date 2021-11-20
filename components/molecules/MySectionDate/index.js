@@ -4,7 +4,7 @@ import MySectionDateStc from './SectionDate.stc'
 function MySectionDate() {
     return (
         <MySectionDateStc className=" py-2 py-md-5">
-            <h1 className="py-3">Les dates à rétenir</h1>
+            <h1 className="py-5" style={{"color": "#ddc893 !important"}}> Les dates à rétenir</h1>
             <div className="div_date">
                 <div className="container">
                     <div className="row py-2 py-md-5">

@@ -15,7 +15,7 @@ const MySectionDateStc=Styled.div`
 
     .div_date
     {
-        background:url(/img/img4.jpg);
+        background:url(/img/img41.jpg);
         background-size:100%;
     }
 
@@ -32,6 +32,7 @@ const MySectionDateStc=Styled.div`
         text-transform: uppercase;
         letter-spacing: 0.8em;
         font-size: 0.8em;
+        color:#fff;
     }
 
     .date, .annee

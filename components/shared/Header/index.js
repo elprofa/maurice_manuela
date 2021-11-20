@@ -36,7 +36,7 @@ const Header = (props) => {
     <HeaderStc>
       <Navbar expand="md" className="container">
         <NavbarBrand href="/" className="pl-0 pl-md-5 ml-0 ml-md-5">
-          <span className="logo">
+          <span className="logo" style={{"color":" #ddc893 !important"}}> 
           Manuela & Maurice
           </span>
         </NavbarBrand>
