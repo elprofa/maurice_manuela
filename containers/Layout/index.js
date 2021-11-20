@@ -11,7 +11,7 @@ const Layout = ({ children, ...props }) => {
   return (
     <ThemeProvider theme={theme}>
       <Head>
-        <title>Dubani agency: Agence de communication digitale à casablanca (MAROC) </title>
+        <title>Mariage: Manuela & Maurice </title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="stylesheet" href="https://use.typekit.net/pgv8psy.css" />
         {/* <link rel="shortcut icon" href="/img/favicon.ico" /> */}
