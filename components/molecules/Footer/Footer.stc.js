@@ -1,6 +1,6 @@
 import Styled from 'styled-components'
 const FooterStc=Styled.section`
-background: #23232e;
+background: #192a48;
 .icon
 {
     font-size:35px;

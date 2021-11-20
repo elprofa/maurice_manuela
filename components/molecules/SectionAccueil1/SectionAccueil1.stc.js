@@ -7,10 +7,12 @@ const SectionAccueil1Stc=Styled.div`
         font-size: 5rem;
         font-family: 'Dancing Script';
         text-align:center;
+        color: #ddc893 !important;
     }
     .image
     {
-        width: 350px;
+        width: 300px;
+        height:300px;
         overflow: hidden;
         border-radius: 100%;
         margin:auto;
@@ -27,6 +29,12 @@ const SectionAccueil1Stc=Styled.div`
         background:url(/img/img41.jpg);
         background-size:100%;
         background-repeat:no-repeat;
+
+        input,select
+        {
+            background: transparent;
+            color:#fff;
+        }
     }
 `;
 
