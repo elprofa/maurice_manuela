@@ -1,5 +1,5 @@
 import React from 'react'
-import SectionAccueil1Stc from './sectionAccueil1.stc'
+import SectionAccueil1Stc from './SectionAccueil1.stc'
 
 function SectionAccueil1() {
     return (
