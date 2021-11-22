@@ -2,14 +2,10 @@ import React from 'react'
 import SectionAccueilSrc from './sectionAccueil.stc'
 function SectionAccueil() {
     return (
-        <SectionAccueilSrc>
-            <div className="bg">
-                <div className='bg1'>
-                    <div className="caption">
-                        <h5>Le magnifique mariage de </h5>
-                        <h1>Manuela & Maurice</h1>
-                    </div>
-                </div>
+        <SectionAccueilSrc className="clean-block clean-hero" >
+            <div class="text py-2">
+                <p>Le magnifique mariage de </p>
+                <h2>Manuela & Maurice</h2>
             </div>
         </SectionAccueilSrc>
     )

@@ -1,49 +1,45 @@
 import Styled from 'styled-components';
 
-const SectionAccueilSrc=Styled.div`
-    min-height: 100vh:;
-    background:rgb(0,0,0,.7);
-
-    div.bg
-    {
-        background:url(/img/img11.jpg);
-        height:100vh;
-        width:100%;
-        background-size:cover;
+const SectionAccueilSrc=Styled.section`
+    background-image:url(/img/img5.jpg);
+    @media (max-width: 767px) {
+        background-image:url(/img/img51.jpg);
+    }
+    @media (max-width: 476px) {
+        background-image:url(/img/img52.jpg);
     }
 
-    .bg1
+    .text
     {
-        background: rgb(0,0,0,.8);
-        height: 100%;
-        width: 100%;
-
-        .caption
-        {
-            text-align:center;
-            position: relative;
-            top:30vh;
-            color:#fff !important;
-            @media (max-width: 476px) {
-                top: 10vh;
-            }
-            top: 30vh;
-            padding-top: 30px;
-            padding-bottom: 30px;
-            border-top:2px solid #fff;
-            border-bottom:2px solid #fff;
-            max-width:80vw;
-            margin:auto;
-            font-family:lato;
-
-            h1
-            {
-                font-size: 5rem;
-                font-family: 'Dancing Script';
-                color:#ddc893;
-            }
+        @media (min-width: 476px) {
+            border-top: 2px solid #fff;
+            border-bottom: 2px solid #fff;
         }
-
+        
     }
+    color:rgba(9, 162, 255, 0.85);
+
+    min-height: 680px;
+    position: relative;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0;
+
+    h2
+    {
+        font-size: 5rem;
+        font-family: 'Dancing Script';
+        color:#ddc893;
+    }
+    p
+    {
+        color:#fff !important;
+        font-family:'Lato';
+    }
+      
 `;
 export default SectionAccueilSrc
