@@ -13,10 +13,11 @@ const MySectionDateStc=Styled.div`
         text-align:center;
     }
 
-    .div_date
+    .p_container
     {
-        background:url(/img/img41.jpg);
+        background:url(/img/motif2.jpg);
         background-size:100%;
+        height:400px;
     }
 
     .ville
@@ -46,7 +47,7 @@ const MySectionDateStc=Styled.div`
     }
 
     .container_date,.annee {
-        border: 1px solid #fff;
+        border-bottom: 1px solid #fff;
     }
     .annee
     {
@@ -55,9 +56,11 @@ const MySectionDateStc=Styled.div`
 
     .btn
     {
-        background: rgb(0,0,0,.7);
+        background: rgb(0,0,0,.85);
         color: #fff;
         border-radius: 0px;
+        height: 68px;
+        line-height: 3.5em;
     }
 `;
 export default MySectionDateStc;

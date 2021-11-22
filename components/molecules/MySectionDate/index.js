@@ -8,23 +8,27 @@ function MySectionDate() {
             <div className="div_date">
                 <div className="container">
                     <div className="row py-2 py-md-5">
-                        <div className="col-md-6">
-                            <div className="container_date text-center py-4">
-                                <div className="ville">Libreville</div>
-                                <div className="jours py-3">Samedi</div>
-                                <div className="date py-3">30 Juillet</div>
+                        <div className="col-md-6 my-2 my-md-0">
+                            <div className="p_container">
+                                <div className="container_date text-center py-4">
+                                    <div className="ville">Libreville</div>
+                                    <div className="jours py-3">Samedi</div>
+                                    <div className="date py-3">30 Juillet</div>
+                                </div>
+                                <div className="annee py-3">2022</div>
+                                <a href="/libreville" className="btn form-control">View detail</a>
                             </div>
-                            <div className="annee py-3">2022</div>
-                            <a href="/libreville" className="btn form-control">View detail</a>
                         </div>
-                        <div className="col-md-6">
-                            <div className="container_date text-center py-4">
-                                <div className="ville">Abidjan</div>
-                                <div className="jours py-3">Samedi</div>
-                                <div className="date py-3">13 Août </div>
+                        <div className="col-md-6 my-2 my-md-0">
+                            <div className="p_container">
+                                <div className="container_date text-center py-4">
+                                    <div className="ville">Abidjan</div>
+                                    <div className="jours py-3">Samedi</div>
+                                    <div className="date py-3">13 Août </div>
+                                </div>
+                                <div className="annee py-3">2022</div>
+                                <a href="/abidjan" className="btn form-control">View detail</a>
                             </div>
-                            <div className="annee py-3">2022</div>
-                            <a href="/abidjan" className="btn form-control">View detail</a>
                         </div>
                     </div>
                 </div>
