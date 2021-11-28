@@ -1,17 +1,20 @@
 import Styled from "styled-components";
 import { theme } from "../../../theme";
 const HeaderStc=Styled.div`
-    background-color:#192a48;
-    *{
-        color:#fff !important;
+    background-color:#0c1524;
+   
+    .toggle
+    {
+        color:#ddc893;
     }
     .logo
     {
-        font-size: 1.5rem;
-        font-family: 'Dancing Script';
+        font-size: 2.5rem;
+        font-family: 'gatsby';
         line-height: 50px;
         top: 20px;
         font-weight:600;
+        color:#ddc893;
 
         div
         {
@@ -42,9 +45,11 @@ const HeaderStc=Styled.div`
        
         a 
         {
-            color:#333;
+            color:#ddc893;
+            font-family:"gatsby";
+            font-size:1.6rem;
             @media (min-width: 991px) {
-                color:#333;
+                color:#ddc893;
             }
             
         }

@@ -1,10 +1,29 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalCSS = createGlobalStyle`
+
+    @font-face {
+        font-family: "gatsbybolditalic";
+        src: url("/fonts/GatsbyFLF-BoldItalic.ttf");
+    }
+    @font-face {
+        font-family: "gatsby";
+        src: url("/fonts/GatsbyFLF.ttf");
+    }
+    @font-face {
+        font-family: "gatsbyitalic";
+        src: url("/fonts/GatsbyFLF-Italic.ttf");
+    }
+    @font-face {
+        font-family: "gatsbyitalic";
+        src: url("/fonts/GatsbyFLF-Italic.ttf");
+    }
+
      * {
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
+        font-family:"gatsby" !important;
     }
     
     body {

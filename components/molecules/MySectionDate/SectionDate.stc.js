@@ -4,50 +4,68 @@ const MySectionDateStc=Styled.div`
     
     min-height:100vh;
     width:100%;
-    background-size:100% auto;
+    background:url(/img/motif2.jpg);
+    
+
+    .icon
+    {
+        margin: auto;
+        display: block;
+    }
 
     h1
     {
-        font-size: 5rem;
+        font-size: 4rem;
         font-family: 'Dancing Script';
         text-align:center;
+        background: #0c1524;
+        max-width: 520px;
+        font-weight:600;
+        margin: auto;
+        margin-top: -20px !important;
     }
 
     .p_container
     {
-        background:url(/img/motif2.jpg);
-        background-size:100%;
-        height:400px;
+        background:#192a48;
+        min-height:400px;
+       
     }
 
     .ville
     {
         font-family: 'Lato';
         font-weight: 900;
-        font-size: 2rem;
-        color: #fff;
+        font-size: 4rem;
+        color: #ddc893;
     }
 
     .jours
     {
         text-transform: uppercase;
-        letter-spacing: 0.8em;
-        font-size: 0.8em;
-        color:#fff;
+        font-size: 2rem;
+        color: #ddc893;
+        font-weight: 600;
+        letter-spacing: 0.5em;
+        padding-top:15px;
+        padding-bottom:15px;
     }
 
     .date, .annee
     {
-        font-family: 'Lato';
         font-weight: 600;
-        font-size: 2.5rem;
-        color: #fff;
+        font-size: 3rem;
+        color: #ddc893;
         text-transform: uppercase;
         text-align:center;
     }
+    .annee
+    {
+        font-size: 4rem;
+    }
 
     .container_date,.annee {
-        border-bottom: 1px solid #fff;
+        border: 2px solid #ddc893;
     }
     .annee
     {
@@ -56,11 +74,12 @@ const MySectionDateStc=Styled.div`
 
     .btn
     {
-        background: rgb(0,0,0,.85);
-        color: #fff;
+        background: #0c1524;
         border-radius: 0px;
-        height: 68px;
-        line-height: 3.5em;
+        min-height: 68px;
+        color:#ddc893;
+        font-weight: 600;
+        font-size: 2rem;
     }
 `;
 export default MySectionDateStc;

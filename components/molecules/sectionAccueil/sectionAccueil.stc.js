@@ -9,14 +9,6 @@ const SectionAccueilSrc=Styled.section`
         background-image:url(/img/img52.jpg);
     }
 
-    .text
-    {
-        @media (min-width: 476px) {
-            border-top: 2px solid #fff;
-            border-bottom: 2px solid #fff;
-        }
-        
-    }
     color:rgba(9, 162, 255, 0.85);
 
     min-height: 680px;
@@ -29,16 +21,60 @@ const SectionAccueilSrc=Styled.section`
     justify-content: center;
     padding-bottom: 0;
 
-    h2
+    .img_accueil
     {
-        font-size: 5rem;
-        font-family: 'Dancing Script';
-        color:#ddc893;
+        max-width:50%;
+        margin:auto;
+        display:block;
+
+        @media (max-width: 996px) {
+            max-width: 100%;
+        }
+        @media (max-width: 476px) {
+            display: none;
+        }
     }
-    p
+
+    .div_title
     {
-        color:#fff !important;
-        font-family:'Lato';
+        left: 0;
+        right: 0;
+        position: absolute;
+        top: 0;
+        
+        .text
+        {
+            max-width: 40%;
+            @media (max-width: 996px) {
+                max-width: 80%;
+            }
+            margin: auto;
+            border: 0px;
+            border-top: 3px solid #ddc893;
+            border-bottom: 3px solid #ddc893;
+            margin-top: 30px;
+
+            p
+            {
+                font-family: 'gatsby' !important;
+                color: #ddc893;
+                font-size: 2rem;
+                font-weight: 600;
+                margin: 0;
+            }
+
+            h2
+            {
+                font-size: 5rem;
+                font-family: 'gatsby' !important;
+                font-weight: 600;
+                color: #ddc893;
+
+                @media (max-width: 996px) {
+                    font-size: 4rem;
+                }
+            }
+        }
     }
       
 `;

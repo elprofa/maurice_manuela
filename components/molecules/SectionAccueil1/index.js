@@ -4,37 +4,39 @@ import SectionAccueil1Stc from './SectionAccueil1.stc'
 function SectionAccueil1() {
     return (
         <SectionAccueil1Stc>
-            <h1 className="py-2 py-md-5">Un couple heureux</h1>
             <div className="container py-2 py-md-5">
                 <div className="row">
-                    <div className="col-md-6">
-                        <div className="image">
-                            <img src="/img/photo2.png" />
-                        </div>
-                            <h1 style={{"fontSize":"3rem"}}>Manuela</h1>
-                            <p>
-                            Manuela : Originaire de
-                            Libreville, et véritable
-                            épicurienne, Manuela est
-                            toujours disponible pour de
-                            nouvelles expériences
-                            </p>
+                    <div className="col-md-4">
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-md-4">
                         <div className="image">
-                            <img src="/img/photo1.png" />
-                        </div>
-
-                        <div className="title">
-                            <h1 style={{"fontSize":"3rem"}}>Maurice</h1>
-                            <p>
-                                Maurice (Maumau pour les intimes) est né et a grandi à Abidjan. il est passionné de
-                                sport et de nouvelles
-                                technologies.
-                            </p>
+                            <img src="/img/imgbg.jpg" width="100%" />
                         </div>
                     </div>
-                    
+                    <div className="col-md-4">
+                    </div>
+                </div>
+                <br/><br/>
+                <div className="container container1">
+                    <div className="row">
+                        <div className="col-lg-12">
+                            <h1>Maurice & Manuela</h1>
+                            <p>La rencontre de l’Ogooué et du Bandama …</p>
+                            <p>
+                                Lors de leurs études en terre Gauloise, un prince Akan (Maurice Appia) a fait la rencontre d’une princesse bantoue (Manuela).
+                            </p>
+                            <p>
+                                Ils tombèrent amoureux et au fil du temps, ils devinrent inséparables.
+                            </p>
+                            <p>
+                                Leur amour grandissant de jour en jour, ils décidèrent alors de sceller leur union, en présence de leurs familles et leurs amis.
+                            </p>
+                            <p>
+                                Ils seront heureux de partager ce moment intime avec vous.
+                            </p>
+                            
+                        </div>
+                    </div>
                 </div>
                 <div className="row py-2 py-md-5 p-2 my-2 my-md-5 p-md-5 form">
                     <div className="col-lg-12 py-2 py-md-4">

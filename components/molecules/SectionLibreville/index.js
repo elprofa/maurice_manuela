@@ -5,22 +5,29 @@ import SectionLibrevilleStc from './SectionLibreville.stc';
 function SectionLibreville() {
     return (
         <SectionLibrevilleStc className="">
-                <div className="row">
-                    <div className="col-md-6 p-5 text-center div_container d-none d-md-block">
-                       
-                    </div>
-                    <div className="col-md-6 p-md-5 py-2">
-                        <h1 className="py-md-5 py-2">Libreville</h1>
-                        <p>
-                            Les festivités débuteront par le mariage traditionnel, à Libreville.
-                        </p>
-                        <p>
-                            Ainsi, le prince Akan accompagné de sa famille, se rendra en terre Bantoue,
-                                le samedi 30 juillet 2022 afin d’honorer sa future épouse dans le respect 
-                                des rites et coutumes de leurs ancêtres.
-                        </p>
+            <br/><br/>
+                 <img src="/img/icon.svg" style={{"maxWidth":"100%"}} className="icon" />
+                <h1 className="py-2 my-5" style={{"color": "#ddc893 !important"}}>
+                    <span>Libreville</span>
+                </h1>
+                <div className="container">
+                    <div className="row" style={{"background":"#0c1524"}}>
+                        <div className="col-md-6 p-5 text-center div_container d-none d-md-block">
+                        
+                        </div>
+                        <div className="col-md-6 px-md-5 py-3">
+                            <p>
+                                Les festivités débutéront par le Mariage Traditionnel, A Libreville.
+                            </p>
+                           <p>
+                               Ainsi, Le Prince Akan Accompagné De sa famille, se rendra en terre Bantoue,
+                               Le samedi 30 Juillet 2022 Afin d'honorer  sa future Epouse dans le respect 
+                               Des Rites Et Coutumes De leurs Ancêtres.
+                           </p>
+                        </div>
                     </div>
                 </div>
+                
         </SectionLibrevilleStc>
     )
 }
