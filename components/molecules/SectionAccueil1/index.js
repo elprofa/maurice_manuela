@@ -69,7 +69,7 @@ function SectionAccueil1() {
                                 </div>
                             </div>
                             <div className="col-md-6">
-                                <button className="btn btn-primary" type="submit">Envoyez</button>
+                                <button className="btn btn-primary btn_send_contact" type="submit">Envoyez</button>
                             </div>
                        </div>
                     </form>

@@ -78,6 +78,14 @@ const SectionAccueil1Stc=Styled.div`
         padding: 25px;
         border: 3px solid #ddc893;
     }
+
+    .btn_send_contact
+    {
+        background: #d7c28e;
+        border-radius: 0px;
+        border-color: #192a48;
+        color: #192a48;
+    }
 `;
 
 export default SectionAccueil1Stc;
