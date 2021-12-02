@@ -1,7 +1,106 @@
-import React from 'react'
+import React, { useState } from "react";
 import SectionAccueil1Stc from './SectionAccueil1.stc'
 
 function SectionAccueil1() {
+
+
+       // States for contact form fields
+        const [fullname, setFullname] = useState("");
+        const [email, setEmail] = useState("");
+        const [subject, setSubject] = useState("cool");
+        const [message, setMessage] = useState("");
+
+        //   Form validation state
+        const [errors, setErrors] = useState({});
+
+        //   Setting button text on form submission
+        const [buttonText, setButtonText] = useState("Send");
+
+        // Setting success or failure messages states
+        const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+        const [showFailureMessage, setShowFailureMessage] = useState(false);
+
+      const handleValidation = () => {
+            let tempErrors = {};
+            let isValid = true;
+        
+            if (fullname.length <= 0) {
+            tempErrors["fullname"] = true;
+            isValid = false;
+            }
+            if (email.length <= 0) {
+            tempErrors["email"] = true;
+            isValid = false;
+            }
+            if (subject.length <= 0) {
+            tempErrors["subject"] = true;
+            isValid = false;
+            }
+            if (message.length <= 0) {
+            tempErrors["message"] = true;
+            isValid = false;
+            }
+        
+            setErrors({ ...tempErrors });
+            console.log("errors", errors);
+            return isValid;
+        };
+
+        const handleSubmit = async (e) => {
+            e.preventDefault();
+        
+            let isValidForm = handleValidation();
+        
+            if (isValidForm) {
+              setButtonText("Sending");
+              const res = await fetch("/api/sendgrid", {
+                body: JSON.stringify({
+                  email: email,
+                  fullname: fullname,
+                  subject: subject,
+                  message: message,
+                }),
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                method: "POST",
+              });
+        
+              const { error } = await res.json();
+              if (error) {
+                console.log(error);
+                setShowSuccessMessage(false);
+                setShowFailureMessage(true);
+                setButtonText("Send");
+                return;
+              }
+              setShowSuccessMessage(true);
+              setShowFailureMessage(false);
+              setButtonText("Send");
+            }
+            console.log(fullname, email, subject, message);
+          };
+
+
+
+        const saisirFullName=(event)=>{
+
+            let fullname1=document.getElementById("idFullname").value;
+            setFullname(fullname1);
+
+        }
+        const saisirEmail=(event)=>{
+
+            let fullname1=document.getElementById("idEmail").value;
+            setEmail(fullname1);
+        }
+
+        const saisirMessage=(event)=>{
+
+            let fullname1=document.getElementById("idMessage").value;
+            setMessage(fullname1);
+        }
+
     return (
         <SectionAccueil1Stc>
             <div className="container py-2 py-md-5">
@@ -47,7 +146,7 @@ function SectionAccueil1() {
                             <div className="col-lg-12">
                                 <div  className="form-group">
                                     <label>Nom & prenom</label>
-                                    <input type="text" className="form-control" />
+                                    <input type="text" id="idFullname" onChange={(event)=>saisirFullName()} value={fullname}  name="fullname" placeholder="Nom & Prenoms" className="form-control" />
                                 </div>
                             </div>
                         </div>
@@ -55,13 +154,14 @@ function SectionAccueil1() {
                             <div className="col-md-6">
                                 <div  className="form-group">
                                     <label>Adresse email</label>
-                                    <input type="email" className="form-control" />
+                                    <input type="email" id="idEmail" name="email" onChange={(event)=>saisirEmail()} placeholder="votre Email" className="form-control" />
+                                    <input type="hidden" name="subject" value="je serais de la partie" />
                                 </div>
                             </div>
                             <div className="col-md-6">
                                 <div  className="form-group">
                                     <label>Participation</label>
-                                    <select className="form-control">
+                                    <select className="form-control" id="idMessage" onChange={(event)=>saisirMessage()} name="message">
                                         <option>Uniquement civil</option>
                                         <option>Uniquement au coutumier</option>
                                         <option>Les deux</option>
@@ -69,7 +169,7 @@ function SectionAccueil1() {
                                 </div>
                             </div>
                             <div className="col-md-6">
-                                <button className="btn btn-primary btn_send_contact" type="submit">Envoyez</button>
+                                <button className="btn btn-primary btn_send_contact" onClick={handleSubmit} type="submit">Envoyez</button>
                             </div>
                        </div>
                     </form>

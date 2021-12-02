@@ -86,6 +86,13 @@ const SectionAccueil1Stc=Styled.div`
         border-color: #192a48;
         color: #192a48;
     }
+
+    form   
+    {
+        color: #d7c28e;
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
 `;
 
 export default SectionAccueil1Stc;
