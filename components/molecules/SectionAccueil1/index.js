@@ -7,8 +7,8 @@ function SectionAccueil1() {
        // States for contact form fields
         const [fullname, setFullname] = useState("");
         const [email, setEmail] = useState("");
-        const [subject, setSubject] = useState("cool");
-        const [message, setMessage] = useState("");
+        const [subject, setSubject] = useState("Coucou Manuela & Maurice !");
+        const [message, setMessage] = useState("Uniquement civil");
 
         //   Form validation state
         const [errors, setErrors] = useState({});
@@ -42,7 +42,7 @@ function SectionAccueil1() {
             }
         
             setErrors({ ...tempErrors });
-            console.log("errors", errors);
+            console.log("errorsss", errors);
             return isValid;
         };
 
@@ -77,8 +77,14 @@ function SectionAccueil1() {
               setShowSuccessMessage(true);
               setShowFailureMessage(false);
               setButtonText("Send");
+
+              console.log(fullname, email, subject, message);
+
+              setFullname("");
+              setEmail("");
+              alert('Message envoyé à Manuela & Maurice');
             }
-            console.log(fullname, email, subject, message);
+            
           };
 
 
