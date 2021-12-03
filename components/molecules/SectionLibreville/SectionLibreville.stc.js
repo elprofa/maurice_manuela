@@ -30,7 +30,6 @@ h1
 {
     background:url(/img/imagelbv.jpeg);
     background-size:cover;
-    height:100vh;
 }
 
 

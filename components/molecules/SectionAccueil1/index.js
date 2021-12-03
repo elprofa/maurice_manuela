@@ -93,7 +93,6 @@ function SectionAccueil1() {
 
             let fullname1=document.getElementById("idFullname").value;
             setFullname(fullname1);
-
         }
         const saisirEmail=(event)=>{
 

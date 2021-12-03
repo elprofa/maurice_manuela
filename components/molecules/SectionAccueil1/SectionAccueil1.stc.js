@@ -49,6 +49,12 @@ const SectionAccueil1Stc=Styled.div`
 
     .form
     {
+        @media (max-width: 476px) {
+        {
+            background:url(/img/capture.png);
+            background-size:cover;
+            background-repeat:no-repeat;
+        }
         @media (min-width: 476px) {
             background:url(/img/bg3.jpg);
             background-size:100%;

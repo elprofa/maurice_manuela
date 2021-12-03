@@ -37,7 +37,6 @@ h1
 {
     background:url(/img/bg1.jpg);
     background-size:cover;
-    height:100vh;
 }
 p
 {

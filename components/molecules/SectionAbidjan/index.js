@@ -16,13 +16,16 @@ function SectionAbidjan() {
                         <div className="col-md-6 div_container d-none d-md-block">
                         </div>
                         <div className="col-md-6 px-md-5 py-3">
+                            
                             <p>
-                                Les festivités débutéront par le Mariage Traditionnel, A Libreville.
+                                Après avoir scellé leur union dans la pure tradition africaine, place aux cérémonies civile et religieuse à Abidjan.
+
+                                Le prince Akan et sa princesse Bantoue se diront Oui devant Dieu et devant les hommes. Cette union aura lieu le samedi 13 août 2022.  
+                                La magnifique journée commencera par une cérémonie civile à la mairie de …
+                                Ensuite, la bénédiction nuptiale aura lieu à la paroisse …
                             </p>
                             <p>
-                               Ainsi, Le Prince Akan Accompagné De sa famille, se rendra en terre Bantoue,
-                               Le samedi 30 Juillet 2022 Afin d'honorer  sa future Epouse dans le respect 
-                               Des Rites Et Coutumes De leurs Ancêtres.
+                                Enfin, un cocktail et un diner sur le thème art deco (Gatsby le magnifique) seront offerts aux invités.
                             </p>
                         </div>
                     </div>
