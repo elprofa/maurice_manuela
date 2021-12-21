@@ -20,7 +20,7 @@ function SectionLibreville() {
                                 Les festivités débutéront par le Mariage Traditionnel, A Libreville.
                             </p>
                            <p>
-                               Ainsi, Le Prince Akan Accompagné De sa famille, se rendra en terre Bantoue,
+                               Ainsi, Le Prince Akan Accompagné De sa famille, se rendra en terre Bantou,
                                Le samedi 30 Juillet 2022 Afin d'honorer  sa future Epouse dans le respect 
                                Des Rites Et Coutumes De leurs Ancêtres.
                            </p>

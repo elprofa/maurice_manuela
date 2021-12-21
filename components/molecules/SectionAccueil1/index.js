@@ -127,7 +127,7 @@ function SectionAccueil1() {
                             <h1>Maurice & Manuela</h1>
                             <p>La rencontre de l’Ogooué et du Bandama …</p>
                             <p>
-                                Lors de leurs études en terre Gauloise, un prince Akan (Maurice Appia) a fait la rencontre d’une princesse bantoue (Manuela).
+                                Lors de leurs études en terre Gauloise, un prince Akan (Maurice Appia) a fait la rencontre d’une princesse bantou (Manuela).
                             </p>
                             <p>
                                 Ils tombèrent amoureux et au fil du temps, ils devinrent inséparables.

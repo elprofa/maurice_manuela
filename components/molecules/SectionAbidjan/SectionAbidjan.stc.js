@@ -35,7 +35,7 @@ h1
 }
 .div_container
 {
-    background:url(/img/bg1.jpg);
+    background:url(/img/ab.jpg);
     background-size:cover;
 }
 p
@@ -46,7 +46,7 @@ p
     font-weight:600;
     color:#ddc893;
     letter-spacing: 0.5rem;
-    line-height: 1.4em !important;
+    line-height: 1.15em !important;
 }
 
 `;
