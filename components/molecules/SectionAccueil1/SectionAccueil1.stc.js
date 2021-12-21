@@ -61,7 +61,7 @@ const SectionAccueil1Stc=Styled.div`
             background-repeat:no-repeat;
         }
         @media (min-width:767px) and (max-width:995px){
-            background-image: url(/img/capture1.png);
+            background-image: url(/img/capture1.PNG);
             background-size: 100% auto;
             min-height: 625px;
             background-repeat:no-repeat;
@@ -69,14 +69,14 @@ const SectionAccueil1Stc=Styled.div`
 
         @media (min-width:478px) and (max-width: 766px)
         {
-            background-image: url(/img/capture2.png);
+            background-image: url(/img/capture2.PNG);
             background-size: 100% auto;
             min-height: 625px;
             background-repeat:no-repeat;
         }
         @media (max-width: 477px)
         {
-            background-image: url(/img/capture.png);
+            background-image: url(/img/capture.PNG);
             background-size: 100% auto;
             min-height: 625px;
             background-repeat:no-repeat;
