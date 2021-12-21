@@ -34,8 +34,7 @@ function MySectionDate() {
                             <div className="p_container">
                                 <div className="container_date text-center">
                                     <div className="ville">Libreville</div>
-                                    <div className="jours ">Samedi</div>
-                                    <div className="date ">30 Juillet</div>
+                                    <div className="date py-5">30 Juillet</div>
                                 </div>
                                 <div className="annee">2022</div>
                                 <a href="/libreville" className="btn form-control">View detail</a>
@@ -45,8 +44,7 @@ function MySectionDate() {
                             <div className="p_container">
                                 <div className="container_date text-center">
                                     <div className="ville">Abidjan</div>
-                                    <div className="jours ">Samedi</div>
-                                    <div className="date ">13 Août </div>
+                                    <div className="date py-5">12 & 13 Août </div>
                                 </div>
                                 <div className="annee ">2022</div>
                                 <a href="/abidjan" className="btn form-control">View detail</a>

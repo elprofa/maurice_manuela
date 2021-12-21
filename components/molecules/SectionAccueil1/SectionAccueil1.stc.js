@@ -4,6 +4,11 @@ const SectionAccueil1Stc=Styled.div`
 
     background:url(/img/motif2.jpg);
 
+    .container.container1 {
+        background: #0c1524!important;
+        border: 4px solid #ddc893;
+    }
+
     h1
     {
         font-size: 4rem;
@@ -49,19 +54,33 @@ const SectionAccueil1Stc=Styled.div`
 
     .form
     {
-        @media (max-width: 476px) {
+        @media (min-width:996px){
+            background-image: url(/img/bg3.jpg);
+            background-size: 100% auto;
+            min-height: 625px;
+            background-repeat:no-repeat;
+        }
+        @media (min-width:767px) and (max-width:995px){
+            background-image: url(/img/capture1.png);
+            background-size: 100% auto;
+            min-height: 625px;
+            background-repeat:no-repeat;
+        }
+
+        @media (min-width:478px) and (max-width: 766px)
         {
-            background:url(/img/capture.png);
-            background-size:cover;
+            background-image: url(/img/capture2.png);
+            background-size: 100% auto;
+            min-height: 625px;
             background-repeat:no-repeat;
         }
-        @media (min-width: 476px) {
-            background:url(/img/bg3.jpg);
-            background-size:100%;
+        @media (max-width: 477px)
+        {
+            background-image: url(/img/capture.png);
+            background-size: 100% auto;
+            min-height: 625px;
             background-repeat:no-repeat;
-            min-height:600px;
         }
-       
 
         input,select
         {
@@ -80,9 +99,8 @@ const SectionAccueil1Stc=Styled.div`
 
     .container1
     {
-        background: #0c1524;
-        padding: 25px;
-        border: 3px solid #ddc893;
+        background: #0c1524!important;
+        border: 4px solid #ddc893;
     }
 
     .btn_send_contact
@@ -98,7 +116,14 @@ const SectionAccueil1Stc=Styled.div`
         color: #d7c28e;
         font-weight: 600;
         font-size: 1.5rem;
+
+        input,select,button {
+            font-weight: 600;
+            font-size: 1.5rem;
+        }
     }
+
+    
 `;
 
 export default SectionAccueil1Stc;

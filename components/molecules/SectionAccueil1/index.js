@@ -121,7 +121,7 @@ function SectionAccueil1() {
                     </div>
                 </div>
                 <br/><br/>
-                <div className="container container1">
+                <div className="container container1 p-md-5">
                     <div className="row">
                         <div className="col-lg-12">
                             <h1>Maurice & Manuela</h1>

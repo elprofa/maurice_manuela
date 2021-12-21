@@ -18,15 +18,15 @@ function SectionAbidjan() {
                         <div className="col-md-6 px-md-5 py-3">
                             
                             <p>
-                                Après avoir scellé leur union dans la pure tradition africaine, place aux cérémonies civile et religieuse à Abidjan.
-
-                                Le prince Akan et sa princesse Bantoue se diront Oui devant Dieu et devant les hommes. Cette union aura lieu le samedi 13 août 2022.  
-                                La magnifique journée commencera par une cérémonie civile à la mairie de …
-                                Ensuite, la bénédiction nuptiale aura lieu à la paroisse …
-                            </p>
-                            <p>
-                                Enfin, un cocktail et un diner sur le thème art deco (Gatsby le magnifique) seront offerts aux invités.
-                            </p>
+                                Après avoir scellé leur union dans la pure tradition africaine, place aux cérémonies civiles et religieuses qui se dérouleront sur deux journées distinctes. 
+                                D’abord, le vendredi 12 aout 2022 à 14h, se déroulera le mariage civil à l’hôtel de ville du Plateau.  </p>
+                                <p>
+                                Ensuite, un cocktail sera offert aux invités. Il se tiendra à la résidence du père du marié, sise à la Riviera Ciad.  
+                                Enfin, le samedi 13 aout 2022, Manuela et Maurice s’uniront devant Dieu à l’église Bon Pasteur (Riviera 3) à 15h. </p>
+                                <p>
+                                    Pour clôturer cette célébration, vous êtes conviés au diner de gala qui se déroulera à Ayana Palace (Angré 8e Tranche) dès 20h. 
+                                    Cette soirée aura pour thème : Art Déco (Gatsby Le Magnifique)
+                                </p>
                         </div>
                     </div>
                </div>
