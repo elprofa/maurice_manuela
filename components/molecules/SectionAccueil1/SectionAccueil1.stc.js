@@ -121,6 +121,10 @@ const SectionAccueil1Stc=Styled.div`
             font-weight: 600;
             font-size: 1.5rem;
         }
+        select#idMessage option {
+            color: #000;
+            font-weight: 600;
+        }
     }
 
     
