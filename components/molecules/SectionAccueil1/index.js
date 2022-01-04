@@ -144,7 +144,7 @@ function SectionAccueil1() {
                 </div>
                 <div className="row py-2 py-md-5 p-2 my-2 my-md-5 p-md-5 form">
                     <div className="col-lg-12 py-2 py-md-4">
-                        <h1 style={{"color":"#fff"}}>Serez-vous de la partie ????</h1>
+                        <h1 style={{"color":"#fff"}}>Serez-vous de la partie ???</h1>
                     </div>
                     <form action="" method="POST" style={{"width":"100%"}}>
                         <div className="row">
