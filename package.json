@@ -29,6 +29,7 @@
     "moment": "^2.29.1",
     "next": "^10.1.2",
     "next-with-apollo": "^5.1.1",
+    "nodemailer": "^6.7.2",
     "nookies": "^2.5.2",
     "nprogress": "^0.2.0",
     "prop-types": "^15.6.2",

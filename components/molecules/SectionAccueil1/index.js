@@ -48,35 +48,39 @@ function SectionAccueil1() {
 
         const handleSubmit = async (e) => {
             e.preventDefault();
+            console.log('Sending')
         
             let isValidForm = handleValidation();
         
             if (isValidForm) {
               setButtonText("Sending");
 
-              await fetch('/api/sendgrid', {
+              fetch('/api/contact', {
                 method: 'POST',
                 headers: {
-                    "Content-Type": "application/json",
-                  },
+                  'Accept': 'application/json, text/plain, */*',
+                  'Content-Type': 'application/json'
+                },
                 body: JSON.stringify({
                     email: email,
                     fullname: fullname,
                     subject: subject,
                     message: message,
                   })
-              });
+              }).then((res) => {
+                console.log('Response received')
+                if (res.status === 200) {
+                  console.log('Response succeeded!')
+                  setShowSuccessMessage(true);
+                  setShowFailureMessage(false);
+                  setButtonText("Send");
+                  setFullname("");
+                  setEmail("");
+                  alert('Message envoyé à Manuela & Maurice');
 
-              setShowSuccessMessage(true);
-              setShowFailureMessage(false);
-              setButtonText("Send");
+                }
+              })
 
-              console.log(fullname, email, subject, message);
-
-              setFullname("");
-              setEmail("");
-
-              alert('Message envoyé à Manuela & Maurice');
             }
             
           };
