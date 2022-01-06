@@ -53,27 +53,20 @@ function SectionAccueil1() {
         
             if (isValidForm) {
               setButtonText("Sending");
-              const res = await fetch("/api/sendgrid", {
-                body: JSON.stringify({
-                  email: email,
-                  fullname: fullname,
-                  subject: subject,
-                  message: message,
-                }),
+
+              await fetch('/api/sendgrid', {
+                method: 'POST',
                 headers: {
-                  "Content-Type": "application/json",
-                },
-                method: "POST",
+                    "Content-Type": "application/json",
+                  },
+                body: JSON.stringify({
+                    email: email,
+                    fullname: fullname,
+                    subject: subject,
+                    message: message,
+                  })
               });
-        
-              const { error } = await res.json();
-              if (error) {
-                console.log(error);
-                setShowSuccessMessage(false);
-                setShowFailureMessage(true);
-                setButtonText("Send");
-                return;
-              }
+
               setShowSuccessMessage(true);
               setShowFailureMessage(false);
               setButtonText("Send");
@@ -82,6 +75,7 @@ function SectionAccueil1() {
 
               setFullname("");
               setEmail("");
+
               alert('Message envoyé à Manuela & Maurice');
             }
             
