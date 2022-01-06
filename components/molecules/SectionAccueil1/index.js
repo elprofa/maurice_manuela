@@ -42,7 +42,7 @@ function SectionAccueil1() {
             }
         
             setErrors({ ...tempErrors });
-            console.log("errorsss", errors);
+            console.log(errors);
             return isValid;
         };
 
