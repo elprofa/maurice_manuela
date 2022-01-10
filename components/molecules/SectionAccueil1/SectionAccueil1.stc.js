@@ -127,6 +127,26 @@ const SectionAccueil1Stc=Styled.div`
         }
     }
 
+
+    #boxLoadingContainer
+    {
+        color: #fff;
+        font-size: 25px;
+        font-weight: 600;
+        letter-spacing: 5px !important;
+        text-align: center;
+        margin: auto;
+        min-width: 300px;
+    }
+
+    .boxSuccess
+    {
+        background: green;
+    }
+    .boxDanger
+    {
+        background: red;
+    }
     
 `;
 

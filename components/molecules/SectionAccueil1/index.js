@@ -48,14 +48,53 @@ function SectionAccueil1() {
 
         const handleSubmit = async (e) => {
             e.preventDefault();
-            console.log('Sending')
+            document.getElementById('boxLoadingContainer').innerHTML = "";
         
             let isValidForm = handleValidation();
         
             if (isValidForm) {
               setButtonText("Sending");
+            
+              let loader = `<div class="boxDanger">Traitement encours......</div>`;
+              document.getElementById('boxLoadingContainer').innerHTML = loader;
+            
+            // -------------------------------------------------------------------------
 
-              fetch('/api/contact', {
+            fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                  'Accept': 'application/json, text/plain, */*',
+                  'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    email: email,
+                    fullname: fullname,
+                    subject: subject,
+                    message: message,
+                  })
+              }).then((res) => {
+                console.log(res)
+                if (res.status == 200) {
+                  console.log('Response succeeded!')
+                  setShowSuccessMessage(true);
+                  setShowFailureMessage(false);
+                  setButtonText("Send");
+                 
+                  
+                  
+                }
+              });
+
+              setFullname("");
+              setEmail("");
+              document.getElementById('idEmail').value="";
+              document.getElementById('idFullname').value="";
+              document.getElementById('boxLoadingContainer').innerHTML = `<div class="bg-success boxSuccess">Message envoyé à Manuela & Maurice avec succès.</div>`;
+
+            }
+            // ----------------------------------------------------------------------------------------------------
+            
+            fetch('/api/contact1', {
                 method: 'POST',
                 headers: {
                   'Accept': 'application/json, text/plain, */*',
@@ -70,21 +109,12 @@ function SectionAccueil1() {
               }).then((res) => {
                 console.log('Response received')
                 if (res.status === 200) {
-                  console.log('Response succeeded!')
-                  setShowSuccessMessage(true);
-                  setShowFailureMessage(false);
-                  setButtonText("Send");
-                  setFullname("");
-                  setEmail("");
-                  
-                  alert('Message envoyé à Manuela & Maurice.');
+                 
                 }
               })
 
-              
+            // ---------------------------------------------
 
-            }
-            
           };
 
 
@@ -146,12 +176,13 @@ function SectionAccueil1() {
                     <div className="col-lg-12 py-2 py-md-4">
                         <h1 style={{"color":"#fff"}}>Serez-vous de la partie ???</h1>
                     </div>
+                    <div id="boxLoadingContainer"></div>
                     <form action="" method="POST" style={{"width":"100%"}}>
                         <div className="row">
                             <div className="col-lg-12">
                                 <div  className="form-group">
                                     <label>Nom & prenom</label>
-                                    <input type="text" id="idFullname" onChange={(event)=>saisirFullName()} value={fullname}  name="fullname" placeholder="Nom & Prenoms" className="form-control" />
+                                    <input type="text" required id="idFullname" onChange={(event)=>saisirFullName()} value={fullname}  name="fullname" placeholder="Nom & Prenoms" className="form-control" />
                                 </div>
                             </div>
                         </div>
@@ -159,7 +190,7 @@ function SectionAccueil1() {
                             <div className="col-md-6">
                                 <div  className="form-group">
                                     <label>Adresse email</label>
-                                    <input type="email" id="idEmail" name="email" onChange={(event)=>saisirEmail()} placeholder="votre Email" className="form-control" />
+                                    <input type="email" id="idEmail" required name="email" onChange={(event)=>saisirEmail()} placeholder="votre Email" className="form-control" />
                                     <input type="hidden" name="subject" value="je serais de la partie" />
                                 </div>
                             </div>
