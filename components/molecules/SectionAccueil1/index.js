@@ -52,7 +52,7 @@ function SectionAccueil1() {
         
             let isValidForm = handleValidation();
         
-            if (isValidForm) {
+            if (document.getElementById('idEmail').value!="" && document.getElementById('idFullname').value!="") {
               setButtonText("Sending");
             
               let loader = `<div class="boxDanger">Traitement encours......</div>`;
@@ -79,8 +79,6 @@ function SectionAccueil1() {
                   setShowSuccessMessage(true);
                   setShowFailureMessage(false);
                   setButtonText("Send");
-                 
-                  
                   
                 }
               });
@@ -91,29 +89,36 @@ function SectionAccueil1() {
               document.getElementById('idFullname').value="";
               document.getElementById('boxLoadingContainer').innerHTML = `<div class="bg-success boxSuccess">Message envoyé à Manuela & Maurice avec succès.</div>`;
 
+                fetch('/api/contact1', {
+                    method: 'POST',
+                    headers: {
+                    'Accept': 'application/json, text/plain, */*',
+                    'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        email: email,
+                        fullname: fullname,
+                        subject: subject,
+                        message: message,
+                    })
+                }).then((res) => {
+                    console.log('Response received')
+                    if (res.status === 200) {
+                    
+                    }
+                })
+
+                
             }
+            else
+            {
+                alert("Veuillez saisir Votre Nom et votre Email svp.");
+            }
+
+
             // ----------------------------------------------------------------------------------------------------
             
-            fetch('/api/contact1', {
-                method: 'POST',
-                headers: {
-                  'Accept': 'application/json, text/plain, */*',
-                  'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({
-                    email: email,
-                    fullname: fullname,
-                    subject: subject,
-                    message: message,
-                  })
-              }).then((res) => {
-                console.log('Response received')
-                if (res.status === 200) {
-                 
-                }
-              })
 
-            // ---------------------------------------------
 
           };
 
