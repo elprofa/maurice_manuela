@@ -25,11 +25,11 @@ function SectionAccueil1() {
             let isValid = true;
         
             if (fullname.length <= 0) {
-            tempErrors["fullname"] = true;
+            tempErrors["fullname"] = "";
             isValid = false;
             }
             if (email.length <= 0) {
-            tempErrors["email"] = true;
+            tempErrors["email"] = "";
             isValid = false;
             }
             if (subject.length <= 0) {
